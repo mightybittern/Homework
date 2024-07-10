@@ -13,4 +13,4 @@
 
 ##HARD WORK PAYS OFF! 🍀
 
-[HWPO]{https://octodex.github.com/images/mona-the-rivetertocat.png}
+[link text](URL)
