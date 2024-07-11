@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog</title>
+</head>
+
+<body class="page-body">
+    <header class="page-header">
+        <div class="page-header-logo">
+            <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo"></a>
+            <span class="logo-text">BINABOX</span>
+        </div>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html">HOME</a>
+                    <details class="home-info-details">
+                        <summary class="more-options-home"></summary>
+                    </details>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html">ABOUT</a>
+                    <details class="about-info-details">
+                        <summary class="more-options-about"></summary>
+                    </details>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmap.html">ROADMAP</a>
+                    <details class="roadmap-info-details">
+                        <summary class="more-options-roadmap"></summary>
+                    </details>
+                </li>
+                <li class="nav-item">
+                    <a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item">
+                    <a href="faqs.html">FAQS</a>
+                    <details class="faqs-info-details">
+                        <summary class="more-options-faqs"></summary>
+                    </details>
+                </li>
+                <li class="nav-item">
+                    <a href="pages.html">PAGES</a>
+                    <details class="pages-info-details">
+                        <summary class="more-options-pages"></summary>
+                    </details>
+                </li>
+            </ul>
+            <figure class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </figure>
+        </nav>
+    </header>
+    <main class="catalog-main">
+        <section class="catalog-image-container">
+            <h1 class="visually-hidden">CATALOG</h1>
+            <h2 class="breadcrumbs-heading">EXPLORE COLLECTIONS</h2>
+            <img src="#" alt="Background Image">
+            <nav class="breadcrumbs">
+                <ul class="breadcrumbs-list">
+                    <li class="breadcrumbs-home"> <a href="#homepage">HOME</a></li>
+                    <li class="breadcrumbs-collection"> <a href="#collections">COLLECTIONS</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="catalog-content">
+            <div class="group-heading">
+                <h2 class="main-content-heading">All Items</h2>
+                <form class="search-bar" action="/search" method="get">
+                    <input class="search-window" type="text" name="query" placeholder="Search NFT">
+                    <input class="search-image" type="image" src="#" alt="search-icon">
+                </form>
+            </div>
+            <div class="filter-bar">
+                <ul class="filter-list">
+                    <li class="filter-item-selected">King<button class="filter-item-remove">x</button>
+                    </li>
+                    <li class="filter-item-selected">Mix<button class="filter-item-remove">x</button>
+                    </li>
+                    <li class="filter-item-selected">Skacura<button class="filter-item-remove">x</button>
+                    </li>
+                </ul>
+                <button class="filter-clear-all">Clear All</button>
+            </div>
+            <div class="catalog-items">
+                <ul class="catalog-list">
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="duck" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="glass-frame" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="cat" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="t-rex" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="playing-card" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="skeleton" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="monkey" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="scissors" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nft-card">
+                            <figure class="nft-figure">
+                                <img src="#" alt="medusa" class="nft-image">
+                                <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="catalog-group">
+            <div class="join-our-community">
+                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="joc-buttons">
+                    <button type="button" class="discord-button">
+                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
+                    </button>
+                    <button type="button" class="whitelist-button">
+                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
+                    </button>
+                </div>
+            </div>
+            <div class="page-footer-logo">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                </a>
+                <span class="logo-text">BINABOX</span>
+            </div>
+            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            <section class="catalog-menu">
+                <div class="subscribe-list">
+                    <h3 class="list-heading">SUBSCRIBE</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-list">
+                    <h3 class="list-heading">COMPANY</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#terms-conditions">Terms Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#whitepaper">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help-center">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="main-content-heading">SUBSCRIBE</h3>
+                    <form class="search-bar" action="/subscribe" method="post">
+                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="bottom-page">
+                    <hr>
+                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Telegram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                        <li><a href="#" class="social-link">TikTok</a></li>
+                        <li><a href="#" class="social-link">Discord</a></li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+
+    </footer>
+</body>
+
+</html>
