@@ -9,35 +9,34 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header-logo">
-            <a href="index.html" class="logo">
-                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
-            </a>
-            <span class="logo-text">BINABOX</span>
-        </div>
-        <nav class="page-header-nav">
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
+        <nav class="top-nav">
             <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <ul class="dropdown">
-                        <li class="nav-item">
-                            <a href="catalog.html" class="nav-link">Collections</a>
-                            <a href="catalog-item.html" class="nav-link">Item Detail</a>
-                        </li>
-                    </ul>
+                <li class="nav-item"><a href="index.html">HOME</a>
                 </li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Roadmap</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Collection</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Pages</a></li>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
             </ul>
+            <div class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </div>
         </nav>
-        <div class="header-buttons">
-            <button class="btn btn-sun">Sun</button>
-            <button class="btn btn-connect">Connect</button>
-            <button class="btn btn-discord">Discord</button>
-        </div>
     </header>
     <main class="contact-us-content">
         <section class="breadcrumbs-container">
@@ -53,86 +52,111 @@
         </section>
         <section class="contact-info">
             <h2 class="hidden-heading">CONTACT INFO</h2>
-            <div class="info-container">
-                <img class="info-logo" src="#" alt="location icon">
-                <h3 class="info-heading">Location</h3>
-                <p>2163 Phillips Gap Rd West Jefferson</p>
-            </div>
-            <div class="info-container">
-                <img class="info-logo" src="#" alt="email icon">
-                <h3 class="info-heading">Email</h3>
-                <a href="mailto:info.avitex@gmail.com">Info.avitex@gmail.com</a>
-            </div>
-            <div class="info-container">
-                <img class="info-logo" src="#" alt="phone icon">
-                <h3 class="info-heading">Phone</h3>
-                <p>+1 666 8888</p>
-            </div>
+            <dl class="info-list">
+                <dt class="main-info">Location</dt>
+                <dd class="sub-info">2163 Phillips Gap Rd West Jefferson</dd>
+                <dt class="main-info">Email</dt>
+                <dd class="sub-info"><a href="mailto:info.avitex@gmail.com">info.avitex@gmail.com</a></dd>
+                <dt class="main-info">Phone</dt>
+                <dd class="sub-info"><a href="tel:+1 666 8888">+1 666 8888</a></dd>
+            </dl>
+            <img class="info-logo" src="#" alt="location icon">
+            <img class="info-logo" src="#" alt="email icon">
+            <img class="info-logo" src="#" alt="phone icon">
         </section>
         <section class="details">
             <h2 class="details-heading">Get In Touch</h2>
             <p class="sub-text">Browse through the most freuently asked questions</p>
             <form action="#" class="details-form">
-                <input type="text" id="name" class="form" value="Name">
-                <input type="text" id="msg-email" class="form" value="Enter your email">
-                <input type="text" id="phone" class="form" value="Phone Number">
-                <input type="text" id="message" class="form" value="Messanger">
+                <input type="text" id="name" class="form" placeholder="Name">
+                <input type="text" id="msg-email" class="form" placeholder="Enter your email">
+                <input type="text" id="phone" class="form" placeholder="Phone Number">
+                <input type="text" id="message" class="form" placeholder="Messanger">
             </form>
             <button class="details-button">SEND MESSANGER</button>
         </section>
     </main>
     <footer class="page-footer">
-        <section class="join-community">
-            <h2 class="join-community-heading">JOIN OUR COMMUNITY</h2>
-            <p class="join-community-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-            </p>
-            <div class="join-community-buttons">
-                <button class="btn btn-discord">Discord</button>
-                <button class="btn btn-whitelist">Whitelist Now</button>
+        <section class="catalog-group">
+            <div class="join-our-community">
+                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="joc-buttons">
+                    <button type="button" class="discord-button">
+                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
+                    </button>
+                    <button type="button" class="whitelist-button">
+                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
+                    </button>
+                </div>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                <span class="logo-text">BINABOX</span>
+            </a>
+            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            <div class="catalog-menu">
+                <div class="subscribe-list">
+                    <h3 class="list-heading">SUBSCRIBE</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-list">
+                    <h3 class="list-heading">COMPANY</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#terms-conditions">Terms Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#whitepaper">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help-center">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="main-content-heading">SUBSCRIBE</h3>
+                    <form class="eimail-bar" action="/subscribe" method="post">
+                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="bottom-page">
+                    <hr>
+                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Telegram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                        <li><a href="#" class="social-link">TikTok</a></li>
+                        <li><a href="#" class="social-link">Discord</a></li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <div class="footer">
-            <div class="page-footer-logo">
-                <a href="index.html" class="logo">
-                    <img src="img/logo.svg" alt="Company Logo" class="logo-img">
-                </a>
-                <span class="logo-text">BINABOX</span>
-            </div>
-            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
-            <nav class="page-footer-nav">
-                <h3 class="page-footer-sub-heading">Subscribe</h3>
-                <ul class="subscribe-list">
-                    <li class="subscribe-item">Home</li>
-                    <li class="subscribe-item">About</li>
-                    <li class="subscribe-item">Roadmap</li>
-                    <li class="subscribe-item">Our Team</li>
-                    <li class="subscribe-item">FAQs</li>
-                </ul>
-                <h3 class="page-footer-sub-heading">Company</h3>
-                <ul class="company-list">
-                    <li class="company-item">Terms Conditions</li>
-                    <li class="company-item">Privacy Policy</li>
-                    <li class="company-item">Whitepaper</li>
-                    <li class="company-item">Help Center</li>
-                </ul>
-                <form action="#" class="subscribe-form">
-                    <h3 class="page-footer-sub-heading">SUBSCRIBE</h3>
-                    <input type="text" class="subscribe-form" id="sub-email" value="Enter your email">
-                    <input type="button" class="subscribe-button" id="button" value="SUBSCRIBE">
-                </form>
-            </nav>
-            <p class="footer-text">BINABOX 2022 - ALL rights reserved</p>
-            <div class="social-media-icons">
-                <a href="#" class="social-icon facebook">Facebook</a>
-                <a href="#" class="social-icon twitter">Twitter</a>
-                <a href="#" class="social-icon telegram">Telegram</a>
-                <a href="#" class="social-icon youtube">YouTube</a>
-                <a href="#" class="social-icon tiktok">TikTok</a>
-                <a href="#" class="social-icon discord">Discord</a>
-            </div>
-        </div>
     </footer>
-
 </body>
 
 </html>

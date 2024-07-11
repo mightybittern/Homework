@@ -9,47 +9,23 @@
 
 <body class="page-body">
     <header class="page-header">
-        <div class="page-header-logo">
-            <a class="main-logo"><img src="#" alt="binabox-logo"></a>
-            <span class="logo-text">BINABOX</span>
-        </div>
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
         <nav class="top-nav">
             <ul class="nav-list">
-                <li class="nav-item">
-                    <a href="index.html">HOME</a>
-                    <details class="home-info-details">
-                        <summary class="more-options-home"></summary>
-                    </details>
+                <li class="nav-item"><a href="index.html">HOME</a>
                 </li>
-                <li class="nav-item">
-                    <a href="about.html">ABOUT</a>
-                    <details class="about-info-details">
-                        <summary class="more-options-about"></summary>
-                    </details>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
                 </li>
-                <li class="nav-item">
-                    <a href="roadmap.html">ROADMAP</a>
-                    <details class="roadmap-info-details">
-                        <summary class="more-options-roadmap"></summary>
-                    </details>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
                 </li>
-                <li class="nav-item">
-                    <a href="collection.html">COLLECTION</a>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
                 </li>
-                <li class="nav-item">
-                    <a href="faqs.html">FAQS</a>
-                    <details class="faqs-info-details">
-                        <summary class="more-options-faqs"></summary>
-                    </details>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
                 </li>
-                <li class="nav-item">
-                    <a href="pages.html">PAGES</a>
-                    <details class="pages-info-details">
-                        <summary class="more-options-pages"></summary>
-                    </details>
-                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
             </ul>
-            <figure class="nav-buttons">
+            <div class="nav-buttons">
                 <button class="toggle-button" onclick="toggle()">
                     <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
                 </button>
@@ -59,7 +35,7 @@
                 <button type="button" class="connect-button">
                     <img src="#" alt="connect-logo"> CONNECT
                 </button>
-            </figure>
+            </div>
         </nav>
     </header>
     <main class="catalog-item-main">
@@ -201,12 +177,10 @@
                     </button>
                 </div>
             </div>
-            <div class="page-footer-logo">
-                <a href="index.html" class="logo">
-                    <img src="img/logo.svg" alt="Company Logo" class="logo-img">
-                </a>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
                 <span class="logo-text">BINABOX</span>
-            </div>
+            </a>
             <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
             <div class="catalog-menu">
                 <div class="subscribe-list">
@@ -248,7 +222,7 @@
                 </div>
                 <div class="subscribe-box">
                     <h3 class="main-content-heading">SUBSCRIBE</h3>
-                    <form class="search-bar" action="/subscribe" method="post">
+                    <form class="email-bar" action="/subscribe" method="post">
                         <input class="search-window" type="email" name="email" placeholder="Enter your email">
                         <button type="submit" class="subscribe-button">SUBSCRIBE</button>
                     </form>
