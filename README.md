@@ -2,7 +2,7 @@
 
 ## 📒 Currently working on:
 BINABOX html:
-- Contact Us
+- Contact Us ✅
 - Blog
 - Blog article
 - About us
