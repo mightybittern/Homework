@@ -4,12 +4,310 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Blog</title>
 </head>
 
-<body>
+<body class="pade-body">
+    <header class="page-header">
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a>
+                </li>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
+            </ul>
+            <div class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="blog-main">
+        <section class="breadcrumbs-container">
+            <h1 class="main-heading">CONTACT US</h1>
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs-nav">
+                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                    <a href="index.html" class="breadcrumb-link">HOME</a> &#10072;
+                    <a href="our-blog.html" class="breadcrumb-link">OUR BLOG</a>
+                </nav>
+            </div>
+            <img class="breadcrumb-image" src="#" alt="darkgrey background">
+        </section>
+        <section class="blog-content">
+            <ul class="blog-list">
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="medusa" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">GAMING</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="skeleton" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">NFT</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="cat" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">GAMING</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="scissors" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">NFT</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="playing-card" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">GAMING</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="glass-frame" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">NFTs</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="monkey" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">GAMING</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="t-rex" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">NFT</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li class="list-item">
+                    <figure class="item-wrap">
+                        <img src="#" alt="duck" class="item-image">
+                        <img src="#" alt="human icon" class="item-logo">
+                        <img src="#" alt="calendar icon" class="item-logo">
+                        <img src="#" alt="gaming tag" class="item-tag">
+                        <figcaption class="list-caption">
+                            <h2 class="caption-heading">SONIC LIVE</h2>
+                            <p class="caption-description">On September 22, 2021. A volutpat nulla eros, nulla ultrices
+                                nec nulla imperdiet...</p>
+                            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                            <time datetime="2022-06-20" class="caption-date">20 JUN 2022</time>&#10072;
+                            <p class="caption-author">TONY NGUYEN</p>
+                            <p class="tag-text">NFT</p>
+                            <a href="blog-article.html">READ MORE &rarr;</a>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <div class="next-previous-buttons">
+            <a href="#" class="previous round">&#8249;</a>
+            <a href="#" class="page-number">2</a>
+            <a href="#" class="page-number">3</a>
+            <a href="#" class="page-number">4</a>
+            <a href="#" class="page-more">...</a>
+            <a href="#" class="next round">&#8250;</a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <section class="catalog-group">
+            <div class="join-our-community">
+                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="joc-buttons">
+                    <button type="button" class="discord-button">
+                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
+                    </button>
+                    <button type="button" class="whitelist-button">
+                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
+                    </button>
+                </div>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                <span class="logo-text">BINABOX</span>
+            </a>
+            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            <div class="catalog-menu">
+                <div class="subscribe-list">
+                    <h3 class="list-heading">SUBSCRIBE</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-list">
+                    <h3 class="list-heading">COMPANY</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#terms-conditions">Terms Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#whitepaper">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help-center">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="main-content-heading">SUBSCRIBE</h3>
+                    <form class="email-bar" action="/subscribe" method="post">
+                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="bottom-page">
+                    <hr>
+                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Telegram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                        <li><a href="#" class="social-link">TikTok</a></li>
+                        <li><a href="#" class="social-link">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
 
-    
+
 </body>
 
 </html>
