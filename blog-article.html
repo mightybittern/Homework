@@ -4,12 +4,329 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Blog article</title>
 </head>
 
 <body>
+    <header class="page-header">
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a>
+                </li>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
+            </ul>
+            <div class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="blog-main">
+        <section class="breadcrumbs-container">
+            <h1 class="main-heading">BLOG DETAIL</h1>
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs-nav">
+                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                    <a href="index.html" class="breadcrumb-link">HOME</a> &#10072;
+                    <a href="our-blog.html" class="breadcrumb-link">OUR BLOG</a> &#10072;
+                    <a href="blog-details.html" class="breadcrumb-link">BLOG DETAIL</a>
+                </nav>
+            </div>
+            <img class="breadcrumb-image" src="#" alt="darkgrey background">
+        </section>
+        <article class="blog-details">
+            <img src="#" alt="dragon" class="blog-image">
+            <img src="#" alt="human icon" class="item-logo">
+            <img src="#" alt="calendar icon" class="item-logo">
+            <img src="#" alt="gaming tag" class="item-tag">
+            <h2 class="article-heading">Senior Apple employee alleges sexism at</h2>
+            <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+            <p class="article-author">TONY NGUYEN</p>&#10072;
+            <time datetime="2022-06-20" class="article-date">20 JUN 2022</time>
+            <p class="article-text">The Basilisks that players collect are represented with NFTs on Ethereum’s
+                blockchain with real-world value. Players use the Basilisks they have gathered to battle other players
+                to win ether (ETH).
+                In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts
+                called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum
+                blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</p>
+        </article>
+        <div class="blog-quote">
+            <q>“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”</q>
+            <img src="#" alt="rating star">
+            <p class="rating">8.5/ 10</p>
+            <p class="rating-by">Markout Corporation</p>
+        </div>
+        <article class="blog-details">
+            <img src="#" alt="two dragons" class="blog-image">
+            <h2 class="article-heading">NFTs are digital assets that represent real-world objects</h2>
+            <p class="article-text">Setting up your avatar and personalizing your nickname on Binance is quick and easy.
+                Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of
+                you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to
+                personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections
+                page to get started.</p>
+            <p class="article-text">Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic >
+                Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option
+                of setting their Avatars on nft.binance.com. Once you set your new unique nickname, it will be
+                standardized and used across the Binance ecosystem.</p>
+        </article>
+        <article class="blog-details">
+            <h2 class="article-heading">NFT Avatar Generators</h2>
+            <p class="article-text">You can find a range of NFT marketplaces where you can buy existing NFTs or list
+                your own NFTs for sale.</p>
+        </article>
+        <section class="blog-caption">
+            <h3 class="hidden-heading">TAGS</h3>
+            <div class="caption=tags">
+                <p class="caption-name">TAGS:</p>
+                <ul class="tag-list">
+                    <li class="tag-item">ICO</li>
+                    <li class="tag-item">CYPPUNK</li>
+                    <li class="tag-item">LIGHT</li>
+                </ul>
+            </div>
+            <div class="caption-share">
+                <p class="caption-name">SHARE:</p>
+                <ul class="social-list">
+                    <li class="social-icon">
+                        <a href="#" class="social-link">
+                            <img src="#" alt="Discord">
+                        </a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#" class="social-link">
+                            <img src="#" alt="Twitter">
+                        </a>
+                    </li>
+                    <li class="social-icon">
+                        <a href="#" class="social-link">
+                            <img src="#" alt="YouTube">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="article-browsing">
+            <a href="#" class="previous-article">
+                <figure class="article-figure">
+                    <img src="#" alt="playing card">
+                    <figcaption class="article-caption">
+                        <p class="caption-text">PREVIOUS</p>
+                        <p class="sub-text">Senior Apple employee alleges sexism at</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#" class="next-article">
+                <figure class="article-figure">
+                    <img src="#" alt="cat">
+                    <figcaption class="article-caption">
+                        <p class="caption-text">NEXT</p>
+                        <p class="sub-text">Senior Apple employee alleges sexism at</p>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+        <section class="sidebar">
+            <form class="search-bar" action="/search" method="get">
+                <input class="search-window" type="text" name="query" placeholder="Search NFT">
+                <input class="search-image" type="image" src="#" alt="search-icon">
+            </form>
+            <div class="categories">
+                <h2 class="sidebar-heading">CATEGORIES</h2>
+                <hr>
+                <ul class="categories-list">
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">NFT (12)</a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">Metaverse (24)</a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">Gaming (100)</a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">Art (230)</a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">Robot (430)</a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">Launchpad (430)</a>
+                    </li>
+                    <li class="categories-item">
+                        <a href="#" class="categories-link">Crypto (430)</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="recent-post">
+                <h2 class="sibebar-heading">RECENT POSTS</h2>
+                <hr>
+                <ul class="recent-post-list">
+                    <li class="recent-post-item">
+                        <a href="#" class="other-article">
+                            <figure class="article-figure">
+                                <img src="#" alt="playing card">
+                                <figcaption class="article-caption">
+                                    <h3 class="sidebar-sub-heading">Senior Apple employee alleges sexism at</h3>
+                                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                                    <p class="sub-text">GAMING</p>&#10072;
+                                    <time datetime="2022-06-20" class="article-date">20 JUN 2022</time>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="recent-post-item">
+                        <a href="#" class="other-article">
+                            <figure class="article-figure">
+                                <img src="#" alt="playing card">
+                                <figcaption class="article-caption">
+                                    <h3 class="sidebar-sub-heading">Senior Apple employee alleges sexism at</h3>
+                                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                                    <p class="sub-text">GAMING</p>&#10072;
+                                    <time datetime="2022-06-20" class="article-date">20 JUN 2022</time>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li class="recent-post-item">
+                        <a href="#" class="other-article">
+                            <figure class="article-figure">
+                                <img src="#" alt="playing card">
+                                <figcaption class="article-caption">
+                                    <h3 class="sidebar-sub-heading">Senior Apple employee alleges sexism at</h3>
+                                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                                    <p class="sub-text">GAMING</p>&#10072;
+                                    <time datetime="2022-06-20" class="article-date">20 JUN 2022</time>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tags">
+                <h2 class="tags-heading">TAG</h2>
+                <hr>
+                <ul class="tags-list">
+                    <li class="list-item">NFT</li>
+                    <li class="list-item">ICO</li>
+                    <li class="list-item">CRYPTO</li>
+                    <li class="list-item">LAUNCHPAD</li>
+                    <li class="list-item">Robot</li>
+                    <li class="list-item">Gaming</li>
+                    <li class="list-item">Metaverse</li>
+                </ul>
+            </div>
+        </section>
+        <section class="leave-reply">
+            <h2 class="reply-heading">LEAVE A REPLY</h2>
+            <p class="reply-sub">Your email address will not be published. Required fields are marked</p>
+            <form action="#" class="reply-form">
+                <input type="text" id="name" class="form" placeholder="Name*">
+                <input type="text" id="email" class="form" placeholder="Enter your email*">
+                <input type="text" id="phone" class="form" placeholder="Phone Number*">
+                <input type="text" id="website" class="form" placeholder="Website">
+                <input type="text" id="comment" class="form" placeholder="Comment*">
+            </form>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="catalog-group">
+            <div class="join-our-community">
+                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="joc-buttons">
+                    <button type="button" class="discord-button">
+                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
+                    </button>
+                    <button type="button" class="whitelist-button">
+                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
+                    </button>
+                </div>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                <span class="logo-text">BINABOX</span>
+            </a>
+            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            <div class="catalog-menu">
+                <div class="subscribe-list">
+                    <h3 class="list-heading">SUBSCRIBE</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-list">
+                    <h3 class="list-heading">COMPANY</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#terms-conditions">Terms Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#whitepaper">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help-center">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="main-content-heading">SUBSCRIBE</h3>
+                    <form class="eimail-bar" action="/subscribe" method="post">
+                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="bottom-page">
+                    <hr>
+                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Telegram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                        <li><a href="#" class="social-link">TikTok</a></li>
+                        <li><a href="#" class="social-link">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
 
-    
 </body>
 
 </html>
