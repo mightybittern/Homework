@@ -4,12 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>FAQs</title>
 </head>
 
 <body>
-
-    
+    <header class="page-header">
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a>
+                </li>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
+            </ul>
+            <div class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="blog-main">
+        <section class="breadcrumbs-container">
+            <h1 class="main-heading">HOW CAN WE HELP?</h1>
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs-nav">
+                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                    <a href="index.html" class="breadcrumb-link">HOME</a> &#10072;
+                    <a href="faqs.html" class="breadcrumb-link">FAQS</a>
+                </nav>
+            </div>
+            <img class="breadcrumb-image" src="#" alt="darkgrey background">
+        </section>
+        <section class="faqs">
+            <h2 class="faqs-heading">FAQS</h2>
+            <div class="faqs-summary">
+                <ul class="faqs-list">
+                    <li class="faq-one">
+                        <details class="faq-details">
+                            <summary class="faq-summary">What Are The NFTs?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urna volutpat venenatis,
+                                risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                    <li class="faq-two">
+                        <details class="faq-details">
+                            <summary class="faq-summary">How Do I Get NFTs?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urnavolutpat
+                                venenatis, risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                    <li class="faq-three">
+                        <details class="faq-details">
+                            <summary class="faq-summary">How Can We Buy Your NFTs?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urnavolutpat
+                                venenatis, risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                    <li class="faq-four">
+                        <details class="faq-details">
+                            <summary class="faq-summary">Who Are The Team Behind The Project?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urnavolutpat
+                                venenatis, risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="catalog-group">
+            <div class="join-our-community">
+                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="joc-buttons">
+                    <button type="button" class="discord-button">
+                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
+                    </button>
+                    <button type="button" class="whitelist-button">
+                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
+                    </button>
+                </div>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                <span class="logo-text">BINABOX</span>
+            </a>
+            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            <div class="catalog-menu">
+                <div class="subscribe-list">
+                    <h3 class="list-heading">SUBSCRIBE</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-list">
+                    <h3 class="list-heading">COMPANY</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#terms-conditions">Terms Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#whitepaper">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help-center">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="main-content-heading">SUBSCRIBE</h3>
+                    <form class="eimail-bar" action="/subscribe" method="post">
+                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="bottom-page">
+                    <hr>
+                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Telegram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                        <li><a href="#" class="social-link">TikTok</a></li>
+                        <li><a href="#" class="social-link">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 
 </html>
