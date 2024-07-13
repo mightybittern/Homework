@@ -4,12 +4,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Homepage</title>
 </head>
 
-<body>
-
-    
+<body class="page-body">
+    <header class="page-header">
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a>
+                </li>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
+            </ul>
+            <div class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="main-info">
+            <img src="#" alt="BINABOX CUBE" class="main-image-cube">
+            <h1 class="main-heading">WITH BINABOX EXPLORE NFT COLLECTION</h1>
+            <p class="sub-heading">We are the best way to check the rarity of NFT collection</p>
+            <div class="mgroup">
+                <dl>
+                    <dt class="ti-number">2240+</dt>
+                    <dd class="ti-text">Total Items</dd>
+                    <dt class="pf-number">1000+</dt>
+                    <dd class="pf-text">Profiles Whitelisted</dd>
+                </dl>
+            </div>
+            <div class="mbutton">
+                <button type="button" class="connect-wallet">CONNECT WALLET</button>
+                <button type="button" class="whitelist-button">WHITELIST NOW</button>
+            </div>
+        </section>
+        <section class="nft-cards">
+            <h2 class="visually-hidden">NFT CARDS</h2>
+            <ol class="nft-cards">
+                <li class="nft-card">
+                    <a href="#">
+                        <figure class="nft-figure">
+                            <img src="#" alt="medusa" class="nft-image">
+                            <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="nft-card">
+                    <a href="#">
+                        <figure class="nft-figure">
+                            <img src="#" alt="skeleton" class="nft-image">
+                            <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="nft-card">
+                    <a href="#">
+                        <figure class="nft-figure">
+                            <img src="#" alt="cat" class="nft-image">
+                            <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="nft-card">
+                    <a href="#">
+                        <figure class="nft-figure">
+                            <img src="#" alt="scissors" class="nft-image">
+                            <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="nft-card">
+                    <a href="#">
+                        <figure class="nft-figure">
+                            <img src="#" alt="playing-card" class="nft-image">
+                            <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="nft-card">
+                    <a href="#">
+                        <figure class="nft-figure">
+                            <img src="#" alt="glass-frame" class="nft-image">
+                            <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ol>
+        </section>
+        <section class="about-us">
+            <h2 class="about-us-heading">ABOUTS US</h2>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nullapariatur.
+                Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id
+                est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat</p>
+            <ol class="about-us-list-content">
+                <li class="about-us-line">
+                    <h3 class="about-us-list-heading">HIGH QUALITY</h3>
+                    <p class="about-us-list-description">Lorem Ipsum is simply dummy text of the printing and Ipsum
+                        typesetting industry.</p>
+                </li>
+                <li class="about-us-line">
+                    <h3 class="about-us-list-heading">BIG COLLECTION</h3>
+                    <p class="about-us-list-description">Lorem Ipsum is simply dummy text of the printing and Ipsum
+                        typesetting industry.</p>
+                </li>
+                <li class="about-us-line">
+                    <h3 class="about-us-list-heading">TOP RESOURCE</h3>
+                    <p class="about-us-list-description">Lorem Ipsum is simply dummy text of the printing and Ipsum
+                        typesetting industry.</p>
+                </li>
+                <li class="about-us-line">
+                    <h3 class="about-us-list-heading">BIG COMMUNITY</h3>
+                    <p class="about-us-list-description">Lorem Ipsum is simply dummy text of the printing and Ipsum
+                        typesetting industry.</p>
+                </li>
+            </ol>
+            <button class="read-more-button">Read More</button>
+        </section>
+        <section class="how-to">
+            <h2 class="how-to-heading">HOW TO BINABOX WORK</h2>
+            <ol class="step-list">
+                <li class="step-line">
+                    <img src="#" alt="wallet-logo">
+                    <h3>STEP 1</h3>
+                    <p>Connect Your Wallet</p>
+                </li>
+                <li class="step-line">
+                    <img src="#" alt="document-logo">
+                    <h3>STEP 2</h3>
+                    <p>Select Your Quality</p>
+                </li>
+                <li class="step-line">
+                    <img src="#" alt="piggy-bank-logo">
+                    <h3>STEP 3</h3>
+                    <p>Confirm The Transaction</p>
+                </li>
+                <li class="step-line">
+                    <img src="#" alt="shopping-cart-logo">
+                    <h3>STEP 4</h3>
+                    <p>Receive Your NFTs</p>
+                </li>
+            </ol>
+        </section>
+        <section class="roadmap">
+            <h2 class="roadmap-heading">ROAD MAP</h2>
+            <figure class="roadmap-images">
+                <img src="#" alt="roadmap-image-one">
+                <img src="#" alt="roadmap-image-two">
+                <img src="#" alt="roadmap-image-three">
+            </figure>
+            <div class="roadmap-phase">
+                <h3 class="roadmap-phase-heading">PHASE 1</h3>
+                <ul class="roadmap-phase-list">
+                    <li class="phase-one-line">
+                        <img src="#" alt="binabox-logo">
+                        <p>Befriending & Chat Functions</p>
+                    </li>
+                    <li class="phase-one-line">
+                        <img src="#" alt="binabox-logo">
+                        <p>Challenging Feature</p>
+                    </li>
+                    <li class="phase-one-line">
+                        <img src="#" alt="binabox-logo">
+                        <p>Corsair Wheel</p>
+                    </li>
+                    <li class="phase-one-line">
+                        <img src="#" alt="binabox-logo">
+                        <p>Mobile Version Launch</p>
+                    </li>
+                </ul>
+            </div>
+            <button class="read-more-button">Read More</button>
+            <div class="roadmap-nav">
+                <button class="left-arrow-button">&lt;</button>
+                <ol class="roadmap-nav-list">
+                    <li class="phase-line">
+                        <img src="#" alt="circle" class="phase-circle">
+                        <p>PHASE 1</p>
+                    </li>
+                    <li class="phase-line">
+                        <img src="#" alt="circle" class="phase-circle">
+                        <p>PHASE 2</p>
+                    </li>
+                    <li class="phase-line">
+                        <img src="#" alt="circle" class="phase-circle">
+                        <p>PHASE 3</p>
+                    </li>
+                    <li class="phase-line">
+                        <img src="#" alt="circle" class="phase-circle">
+                        <p>PHASE 4</p>
+                    </li>
+                </ol>
+                <button class="right-arrow-button">&gt;</button>
+            </div>
+        </section>
+        <section class="our-team">
+            <h2 class="visually-hidden">Team Members</h2>
+            <ol class="ot-members">
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Jason Smith</h3>
+                    <img src="#" class="ot-portrait" alt="Jason Smith">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Jason Smith</p>
+                        <p class="ot-member-pos">Co - Founder</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Ralph Edwards</h3>
+                    <img src="#" class="ot-portrait" alt="Ralph Edwards">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Ralph Edwards</p>
+                        <p class="ot-member-pos">Founder</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Tony Wings</h3>
+                    <img src="#" class="ot-portrait" alt="Tony Wings">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Tony Wings</p>
+                        <p class="ot-member-pos">Web Designer</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Edward Howard</h3>
+                    <img src="#" class="ot-portrait" alt="Edward Howard">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Edward Howard</p>
+                        <p class="ot-member-pos">Project Manager</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Jenny Wilson</h3>
+                    <img src="#" class="ot-portrait" alt="Jenny Wilson">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Jenny Wilson</p>
+                        <p class="ot-member-pos">Artist</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Robert Fox</h3>
+                    <img src="#" class="ot-portrait" alt="Robert Fox">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Robert Fox</p>
+                        <p class="ot-member-pos">UI/UX Designer</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Devon Lane</h3>
+                    <img src="#" class="ot-portrait" alt="Devon Lane">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Devon Lane</p>
+                        <p class="ot-member-pos">UX Architect</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="partners">
+            <h2 class="partners-heading">BINABOX PARTNERS</h2>
+            <div class="partner-logo">
+                <img src="#" alt="near">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="binance chain">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="coinbase wallet">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="zerion">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="zapper">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="instaApp">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="atoken">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="trust wallet">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="giving block">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="venly">
+            </div>
+            <div class="partner-logo"><img src="#" alt="pillar">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="dappRadar">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="synthetix">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="unstoppable">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="live coin watch">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="bitpay">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="unstoppable domains">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="huobi_wallet">
+            </div>
+        </section>
+        <section class="faqs">
+            <h2 class="faqs-heading">FAQS</h2>
+            <div class="faqs-summary">
+                <ul class="faqs-list">
+                    <li class="faq-one">
+                        <details class="faq-details">
+                            <summary class="faq-summary">What Are The NFTs?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urna volutpat venenatis,
+                                risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                    <li class="faq-two">
+                        <details class="faq-details">
+                            <summary class="faq-summary">How Do I Get NFTs?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urnavolutpat
+                                venenatis, risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                    <li class="faq-three">
+                        <details class="faq-details">
+                            <summary class="faq-summary">How Can We Buy Your NFTs?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urnavolutpat
+                                venenatis, risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                    <li class="faq-four">
+                        <details class="faq-details">
+                            <summary class="faq-summary">Who Are The Team Behind The Project?</summary>
+                            <hr>
+                            <p class="faq-description">
+                                Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+                                Nulla dapibus urnavolutpat
+                                venenatis, risus faucibus.
+                            </p>
+                        </details>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="join-our-community">
+            <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+            <p class="joc-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </p>
+            <div class="joc-buttons">
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="whitelist-button">
+                    <img src="#" alt="whitelist-logo"> WHITELIST NOW
+                </button>
+            </div>
+            <div class="social-links">
+                <ol class="social-links-logo">
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="#" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="#" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="#" alt="Telegram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="#" alt="YouTube">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="#" alt="TikTok">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="social-link">
+                            <img src="#" alt="Discord">
+                        </a>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <section class="footer-nav">
+            <h2 class="visually-hidden">FOOTER-HEADING</h2>
+            <div class="copyright">
+                <a class="main-logo">
+                    <img src="img/logo.svg" alt="binabox-logo">
+                </a>
+                <span class="logo-text">BINABOX</span>
+                <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+            </div>
+            <nav class="bot-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#homepage">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faqs">FAQs</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </footer>
 </body>
 
 </html>
