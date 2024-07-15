@@ -5,8 +5,8 @@ BINABOX html:
 - Contact Us ✅
 - Blog 🚧
 - Blog article 🚧
-- About us 🚧
-- FAQS 🚧
+- About us ✅
+- FAQS ✅
 - Hover nav 🚧
 ---
 HARD WORK PAYS OFF! 🍀
