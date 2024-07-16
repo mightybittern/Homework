@@ -4,12 +4,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>About-us</title>
 </head>
 
 <body>
+    <header class="page-header">
+        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
+            <span class="logo-text">BINABOX</span></a>
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">HOME</a>
+                </li>
+                <li class="nav-item"><a href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item"><a href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item"><a href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item"><a href="pages.html">PAGES</a>
+            </ul>
+            <div class="nav-buttons">
+                <button class="toggle-button" onclick="toggle()">
+                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
+                </button>
+                <button type="button" class="discord-button">
+                    <img src="#" alt="discord-logo"> DISCORD
+                </button>
+                <button type="button" class="connect-button">
+                    <img src="#" alt="connect-logo"> CONNECT
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="blog-main">
+        <section class="breadcrumbs-container">
+            <h1 class="main-heading">ABOUT US</h1>
+            <div class="breadcrumbs">
+                <nav class="breadcrumbs-nav">
+                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
+                    <a href="index.html" class="breadcrumb-link">HOME</a> &#10072;
+                    <a href="our-blog.html" class="breadcrumb-link">ABOUT US</a>
+                </nav>
+            </div>
+            <img class="breadcrumb-image" src="#" alt="darkgrey background">
+        </section>
+        <section class="about-us-section">
+            <h2 class="section-heading">THE STORY</h2>
+            <p class="section-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese
+                runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat
+            </p>
+            <dl class="about-us-description">
+                <dt class="list-term">Total Iteam</dt>
+                <dd class="list-description">2240+</dd>
+                <dt class="list-term">Profiles Whitelisted</dt>
+                <dd class="list-description">1000+</dd>
+            </dl>
+            <ol class="about-us-list">
+                <li class="list-item">
+                    <h3 class="list-item-heading">HIGH QUALITY</h3>
+                    <p class="list-item-number">01</p>
+                    <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </li>
+                <li class="list-item">
+                    <h3 class="list-item-heading">BIG COLLECTION</h3>
+                    <p class="list-item-number">02</p>
+                    <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </li>
+                <li class="list-item">
+                    <h3 class="list-item-heading">TOP RESOURCE</h3>
+                    <p class="list-item-number">03</p>
+                    <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </li>
+                <li class="list-item">
+                    <h3 class="list-item-heading">BIG COMMUNITY</h3>
+                    <p class="list-item-number">04</p>
+                    <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </li>
+            </ol>
+        </section>
+        <section class="out-team">
+            <h2 class="section-heading">OUR TEAM</h2>
+            <ol class="ot-members">
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Jason Smith</h3>
+                    <img src="#" class="ot-portrait" alt="Jason Smith">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Jason Smith</p>
+                        <p class="ot-member-pos">Co - Founder</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Ralph Edwards</h3>
+                    <img src="#" class="ot-portrait" alt="Ralph Edwards">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Ralph Edwards</p>
+                        <p class="ot-member-pos">Founder</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Tony Wings</h3>
+                    <img src="#" class="ot-portrait" alt="Tony Wings">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Tony Wings</p>
+                        <p class="ot-member-pos">Web Designer</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Edward Howard</h3>
+                    <img src="#" class="ot-portrait" alt="Edward Howard">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Edward Howard</p>
+                        <p class="ot-member-pos">Project Manager</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Jenny Wilson</h3>
+                    <img src="#" class="ot-portrait" alt="Jenny Wilson">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Jenny Wilson</p>
+                        <p class="ot-member-pos">Artist</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Robert Fox</h3>
+                    <img src="#" class="ot-portrait" alt="Robert Fox">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Robert Fox</p>
+                        <p class="ot-member-pos">UI/UX Designer</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+                <li class="ot-member">
+                    <h3 class="tony-wings-heading">Devon Lane</h3>
+                    <img src="#" class="ot-portrait" alt="Devon Lane">
+                    <div class="name-pos">
+                        <p class="ot-member-name">Devon Lane</p>
+                        <p class="ot-member-pos">UX Architect</p>
+                    </div>
+                    <div class="ot-links">
+                        <a href="#" class="ot-linkedin">LinkedIn</a>
+                        <a href="#" class="ot-facebook">Facebook</a>
+                        <a href="#" class="ot-instagram">Instagram</a>
+                        <a href="#" class="ot-telegram">Telegram</a>
+                    </div>
+                </li>
+            </ol>
+        </section>
+        <section class="partners">
+            <h2 class="partners-heading">BINABOX PARTNERS</h2>
+            <div class="partner-logo">
+                <img src="#" alt="near">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="binance chain">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="coinbase wallet">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="zerion">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="zapper">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="instaApp">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="atoken">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="trust wallet">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="giving block">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="venly">
+            </div>
+            <div class="partner-logo"><img src="#" alt="pillar">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="dappRadar">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="synthetix">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="unstoppable">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="live coin watch">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="bitpay">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="unstoppable domains">
+            </div>
+            <div class="partner-logo">
+                <img src="#" alt="huobi_wallet">
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <section class="catalog-group">
+            <div class="join-our-community">
+                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                </p>
+                <div class="joc-buttons">
+                    <button type="button" class="discord-button">
+                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
+                    </button>
+                    <button type="button" class="whitelist-button">
+                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
+                    </button>
+                </div>
+            </div>
+            <a href="index.html" class="logo">
+                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
+                <span class="logo-text">BINABOX</span>
+            </a>
+            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            <div class="catalog-menu">
+                <div class="subscribe-list">
+                    <h3 class="list-heading">SUBSCRIBE</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#homepage">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#our-team">Our Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#faqs">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="company-list">
+                    <h3 class="list-heading">COMPANY</h3>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#terms-conditions">Terms Conditions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#privacy-policy">Privacy Policy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#whitepaper">Whitepaper</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#help-center">Help Center</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscribe-box">
+                    <h3 class="main-content-heading">SUBSCRIBE</h3>
+                    <form class="email-bar" action="/subscribe" method="post">
+                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
+                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <div class="bottom-page">
+                    <hr>
+                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-link">Facebook</a></li>
+                        <li><a href="#" class="social-link">Twitter</a></li>
+                        <li><a href="#" class="social-link">Telegram</a></li>
+                        <li><a href="#" class="social-link">YouTube</a></li>
+                        <li><a href="#" class="social-link">TikTok</a></li>
+                        <li><a href="#" class="social-link">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </footer>
 
-    
 </body>
 
 </html>
