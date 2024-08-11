@@ -1,3 +1,64 @@
-* {
-    font-size: 1.5rem;
+h1,
+h2 {
+    font-family: "Bakbak One", Serif, Sans-serif;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 56px;
+    color: #fff;
+    margin: 0;
+}
+h3 {
+    font-family: "Bakbak One", Serif, Sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #fff;
+}
+p {
+    font-family: Poppins, Serif, Sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #C2C3C5;
+}
+.list-term {
+    font-family: "Bakbak One", Serif, Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #C2C3C5;
+}
+
+.list-description {
+    font-family: "Bakbak One", Serif, Sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 68px;
+    color: #fff;
+    text-shadow: 0 4px 16px #FFFFFF66;
+}
+.list-item-number {
+    font-family: "Bakbak One", Serif, Sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    color: #21E786;
+    opacity: 30%;
+}
+
+.list-item-sub {
+    font-family: Poppins, Serif, Sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #C2C3C5;
+}
+body {
+    background: #0D0D11;
+    text-align: center;
+    margin: auto;
+    width: 1920px;
+    height: 3288px;
+    top: 4592px;
+    left: -5225px;
 }
