@@ -5,7 +5,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bakbak+One&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bakbak+One&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
@@ -17,40 +16,31 @@
 <body>
     <header class="page-header">
         <nav class="top-nav">
-            <a class="main-logo"><img src="Images\logo\binaboxlogo36x40.svg" alt="binabox logo" width="188px" height="42px"></a>
+            <a class="main-logo"><img src="images\logo\binaboxlogo36x40.svg" alt="binabox logo" width="188" height="42"></a>
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html">HOME</a>
-                    <button class="dropbtn"><img src="Images\icons-arrows\arrow-down.svg" width="10px" height="5px" alt="arrow down">
-                    </button>
+                    <button class="dropbtn">drop arrow</button>
                 </li>
-                <li class="nav-item"><a href="about.html">ABOUT</a>
-                    <button class="dropbtn"><img src="Images\icons-arrows\arrow-down.svg" width="10px" height="5px" alt="arrow down">
-                    </button>
+                <li class="nav-item"><a href="about-us.html">ABOUT</a>
+                    <button class="dropbtn">drop arrow</button>
                 </li>
                 <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
-                    <button class="dropbtn"><img src="Images\icons-arrows\arrow-down.svg" width="10px" height="5px" alt="arrow down">
-                    </button>
+                    <button class="dropbtn">drop arrow</button>
                 </li>
                 <li class="nav-item"><a href="collection.html">COLLECTION</a>
                 </li>
                 <li class="nav-item"><a href="faqs.html">FAQS</a>
-                    <button class="dropbtn"><img src="Images\icons-arrows\arrow-down.svg" width="10px" height="5px" alt="arrow down">
-                    </button>
+                    <button class="dropbtn">drop arrow</button>
                 </li>
                 <li class="nav-item"><a href="pages.html">PAGES</a>
-                    <button class="dropbtn"><img src="Images\icons-arrows\arrow-down.svg" width="10px" height="5px" alt="arrow down">
-                    </button>
+                    <button class="dropbtn">drop arrow</button>
             </ul>
             <div class="nav-buttons">
-                <button class="toggle-button" onclick="toggle()">
-                    <img id="sun-icon" src="Images\buttons\switch.svg" width="24px" height="24px" alt="toggle light or dark mode">
+                <button class="toggle-button" onclick="toggle()">toggle
+                    <img id="sun-icon" src="images\buttons\switch.svg" width="22.5" height="22.5" alt="">
                 </button>
-                <button type="button" class="discord-button">
-                    <img src="Images\icons\discord.svg" alt="discord icon" width="24px" height="24px"> DISCORD
-                </button>
-                <button type="button" class="connect-button">
-                    <img src="Images\buttons\connect-icon.svg" alt="connect-logo" width="24px" height="24px"> CONNECT
-                </button>
+                <button type="button" class="discord-button">DISCORD</button>
+                <button type="button" class="connect-button">CONNECT</button>
             </div>
         </nav>
     </header>
@@ -59,24 +49,21 @@
             <h1 class="main-heading">HOW CAN WE HELP?</h1>
             <div class="breadcrumbs">
                 <nav class="breadcrumbs-nav">
-                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
                     <a href="index.html" class="breadcrumb-link">HOME</a>
-                    <svg width="2" height="16">
-                        <rect width="2" height="16"/>
-                    </svg>
-                    <a href="faqs.html" class="breadcrumb-link">FAQS</a>
+                    <!-- Note: Add pseudo element for separator -->
+                    <a href="faqs.html" class="breadcrumb-link"><span>FAQS</span></a>
                 </nav>
             </div>
         </section>
         <section class="faqs">
-            <h2 class="faqs-heading">FAQS</h2>
+            <h2 class="faqs heading">FAQS</h2>
             <div class="faqs-summary">
                 <ul class="faqs-list">
                     <li class="faq-one">
                         <details class="faq-details">
                             <summary class="faq-summary">What Are The NFTs?</summary>
                             <hr>
-                            <p class="faq-description">
+                            <p class="faq-description sub-text">
                                 Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
                                 Nulla dapibus urna volutpat venenatis,
                                 risus faucibus.
@@ -87,7 +74,7 @@
                         <details class="faq-details">
                             <summary class="faq-summary">How Do I Get NFTs?</summary>
                             <hr>
-                            <p class="faq-description">
+                            <p class="faq-description sub-text">
                                 Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
                                 Nulla dapibus urnavolutpat
                                 venenatis, risus faucibus.
@@ -98,7 +85,7 @@
                         <details class="faq-details">
                             <summary class="faq-summary">How Can We Buy Your NFTs?</summary>
                             <hr>
-                            <p class="faq-description">
+                            <p class="faq-description sub-text">
                                 Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
                                 Nulla dapibus urnavolutpat
                                 venenatis, risus faucibus.
@@ -109,7 +96,7 @@
                         <details class="faq-details">
                             <summary class="faq-summary">Who Are The Team Behind The Project?</summary>
                             <hr>
-                            <p class="faq-description">
+                            <p class="faq-description sub-text">
                                 Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
                                 Nulla dapibus urnavolutpat
                                 venenatis, risus faucibus.
@@ -123,18 +110,17 @@
     <footer class="page-footer">
         <section class="catalog-group">
             <div class="join-our-community">
-                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
-                <p class="joc-text">
+                <h2 class="joc heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text-diff">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
                 <div class="joc-buttons">
-                    <button type="button" class="discord-button">
-                        <img src="Images\icons\discord.svg" alt="discord logo" width="24px" height="24px"> DISCORD</button>
+                    <button type="button" class="discord-button">DISCORD</button>
                     <button type="button" class="whitelist-button">WHITELIST NOW</button>
                 </div>
             </div>
             <a href="index.html" class="logo">
-                <img src="Images\logo\binaboxlogo24z27.svg" alt="Company Logo" class="logo-img" width="176px" height="42px"></a>
+                <img src="Images\logo\binaboxlogo24z27.svg" alt="Company Logo" class="logo-img" width="176" height="42"></a>
             <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
             <div class="catalog-menu">
                 <div class="subscribe-list">
@@ -185,12 +171,12 @@
                     <hr>
                     <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
                     <ul class="social-links">
-                        <li><a href="#" target="_blank" class="social-link"><img src="Images\icons\twitter.svg" alt="twitter icon" width="20px" height="20px"><i class="twitterlink"></i></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="Images\icons\facebook.svg" alt="facebook icon" width="20px" height="20px"><i class="fblink"></i></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="Images\icons\telegram.svg" alt="telegram icon" width="20px" height="20px"><i class="telegramlink"></i></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="Images\icons\youtube.svg" alt="youtube icon" width="20px" height="20px"><i class="youtubelink"></i></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="Images\icons\ticktok.svg" alt="tiktok icon" width="20px" height="20px"><i class="tiktoklink"></i></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="Images\icons\discord.svg" alt="discord icon" width="20px" height="20px"><i class="discordlink"></i></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\twitter.svg" alt="twitter icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\telegram.svg" alt="telegram icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\youtube.svg" alt="youtube icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\ticktok.svg" alt="tiktok icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\discord.svg" alt="discord icon" width="20" height="20"></a></li>
                     </ul>
                 </div>
             </div>

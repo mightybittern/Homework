@@ -1,5 +1,14 @@
+body {
+    color: #fff;
+    background: #0D0D11;
+    text-align: center;
+    margin: auto;
+    width: 1920px;
+    height: 3288px;
+}
+
 li a {
-    font-family: "Bakbak One", serif;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -23,7 +32,7 @@ li a {
     gap: 8px;
     font-size: 16px;
     color: #fff;
-    font-family: "Bakbak One", serif;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-weight: 400;
     line-height: 24px;
     padding: 12px 24px;
@@ -33,9 +42,6 @@ li a {
     background-color: #141B22;
     cursor: pointer;
 }
-.discord-button img {
-    display: block;
-}
 
 .connect-button {
     display: flex;
@@ -44,7 +50,7 @@ li a {
     gap: 8px;
     font-size: 16px;
     color: #000;
-    font-family: "Bakbak One", serif;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-weight: 400;
     line-height: 24px;
     padding: 12px 24px;
@@ -54,21 +60,18 @@ li a {
     background: #21E786;
     cursor: pointer;
 }
-connect-button img {
-    display: block;
-}
 
-.breadcrumbs a {
+.breadcrumbs-nav a {
     font-size: 14px;
-    color: #000;
-    font-family: "Bakbak One", serif;
+    color: #888B8E;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-weight: 400;
     line-height: 20px;
 }
 
-h1,
-h2 {
-    font-family: "Bakbak One", serif;
+.main-heading,
+.heading {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-weight: 400;
     font-size: 44px;
     line-height: 56px;
@@ -76,23 +79,68 @@ h2 {
     margin: 0;
 }
 
-h3 {
-    font-family: "Bakbak One", serif;
+.sub-heading,
+.how-to-text {
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
     color: #fff;
 }
 
-p {
-    font-family: Poppins, serif;
+.how-to-heading {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #21E786;
+
+}
+
+.ot-member-pos,
+.faq-description,
+.joc-text,
+.sub-text {
+    font-family: Poppins, Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
+    line-height: 28px;
     color: #C2C3C5;
 }
 
+.copyright-text {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+
+}
+
+.visually-hidden {
+    visibility: hidden;
+}
+
+.nft-card,
+.about-us-list-content,
+.step-list,
+.roadmap-phase-list,
+.roadmap-nav-list,
+.faqs-list,
+.social-links-logo,
+.social-links,
+.filter-list,
+.catalog-list,
+.blog-list,
+.tag-list,
+.social-list,
+.categories-list,
+.recent-post-list {
+    list-style: none;
+}
+
 .list-term {
-    font-family: "Bakbak One", serif;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -100,7 +148,7 @@ p {
 }
 
 .list-description {
-    font-family: "Bakbak One", serif;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-size: 56px;
     font-weight: 400;
     line-height: 68px;
@@ -109,7 +157,7 @@ p {
 }
 
 .list-item-number {
-    font-family: "Bakbak One", serif;
+    font-family: "Bakbak One", Arial, sans-serif;
     font-weight: 400;
     font-size: 80px;
     line-height: 96px;
@@ -118,7 +166,7 @@ p {
 }
 
 .list-item-sub {
-    font-family: Poppins, serif;
+    font-family: Poppins, Arial, sans-serif;
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
@@ -126,14 +174,206 @@ p {
     color: #C2C3C5;
 }
 
-body {
-    background: #0D0D11;
+.joc-text-diff,
+.sub-info {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
     text-align: center;
-    margin: auto;
-    width: 1920px;
-    height: 3288px;
-    top: 4592px;
-    left: -5225px;
+    color: #F7F7F9;
+}
+
+.page-footer-text {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.list-heading,
+.main-content-heading,
+.rating-by,
+.caption-name,
+.caption-name {
+    font-family: "Bakbak One";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.subscribe-list ul li a,
+.company-list ul li a {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #C2C3C5;
+
+}
+
+.main-info,
+.price-text,
+.reply {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+}
+
+.details .sub-text {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.filter-item-selected {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #F7F7F7;
+}
+
+.contdown {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.countdown-number {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 56px;
+}
+
+.countdown-unit {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #F6F6F6;
+}
+
+.details-description,
+.caption-description,
+.article-text,
+.reply-sub {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #C2C3C5;
+}
+
+.info-category {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #C2C3C5;
+}
+
+.info-detail {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.caption-date,
+.caption-author {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #888B8E;
+}
+
+.article-tag {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.blog-details>.article-author,
+.article-date {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #888B8E;
+}
+
+.quote {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.rating {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #BBBABE;
+}
+
+.blog-details>.article {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.tag-item a,
+.sidebar-article p,
+.sidebar-article time,
+.tags-list li a {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.article-text {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #888B8E;
+}
+
+.article-figure .sub-text,
+.sidebar-article>h3 {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #fff;
+}
+
+.categories-link {
+    font-family: Poppins, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #C2C3C5;
+
+}
+
+h2[class~="sidebar"] {
+    font-family: "Bakbak One", Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .page-header {
@@ -147,8 +387,6 @@ body {
 }
 
 .main-logo {
-    width: 188px;
-    height: 42px;
     display: flex;
     align-items: center;
 }
@@ -169,16 +407,16 @@ body {
     padding: 0;
     width: 709px;
     height: 24px;
-    top: 42px;
-    left: 510.5px;
     gap: 32px;
 
 }
+
 .nav-item {
     display: flex;
     align-items: center;
     gap: 8px;
 }
+
 .nav-item .dropbtn {
     background: none;
     border: none;
@@ -188,10 +426,6 @@ body {
     align-items: center;
 }
 
-.nav-item .dropbtn img {
-    display: block;
-}
-
 
 .nav-buttons {
     display: flex;
@@ -199,8 +433,6 @@ body {
     align-items: center;
     width: 384px;
     height: 48px;
-    top: 30px;
-    left: 1281px;
     gap: 20px;
 }
 
@@ -234,10 +466,6 @@ body {
     margin: 0 10px;
 }
 
-svg {
-    fill: #888B8E;
-    display: inline-block;
-}
 .about-us-section {
     box-sizing: border-box;
     display: inline-block;
@@ -246,7 +474,8 @@ svg {
     height: 612px;
     margin: auto;
 }
-.list-term + .list-description {
+
+.list-term+.list-description {
     display: inline-block;
 }
 
@@ -276,6 +505,7 @@ svg {
     align-items: center;
 
 }
+
 .ot-members {
     padding: 0;
 }
@@ -292,12 +522,11 @@ svg {
 .ot-portrait {
     border-radius: 50%;
 }
+
 .partners {
     width: 1410px;
     height: 474px;
-    top: 2086px;
-    left: 255px;
-    margin: auto;  
+    margin: auto;
 }
 
 .join-our-community {
@@ -317,11 +546,6 @@ svg {
 .social {
     list-style: none;
     display: inline-block;
-    float: right;
-}
-
-.copyright-text {
-    float: left;
 }
 
 .catalog-menu {
