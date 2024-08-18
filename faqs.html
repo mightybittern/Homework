@@ -162,9 +162,11 @@
                 </div>
                 <div class="subscribe-box">
                     <h3 class="main-content-heading">SUBSCRIBE</h3>
-                    <form class="email-bar" action="/subscribe" method="post">
-                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
-                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    <form method="get" class="email-form catalog">
+                        <input class="email-input" name="email" type="email" placeholder="Enter your email"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                        <label class="email-label" for="email"></label>
+                        <button class="email-btn" type="submit">SUBSCRIBE</button>
                     </form>
                 </div>
                 <div class="bottom-page">

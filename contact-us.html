@@ -70,15 +70,21 @@
             </dl>
         </section>
         <section class="details">
-            <h2 class="details heading">Get In Touch</h2>
-            <p class="sub-text">Browse through the most freuently asked questions</p>
-            <form action="#" class="details-form">
-                <input type="text" id="name" class="form" placeholder="Name">
-                <input type="text" id="msg-email" class="form" placeholder="Enter your email">
-                <input type="text" id="phone" class="form" placeholder="Phone Number">
-                <input type="text" id="message" class="form" placeholder="Messanger">
+            <h2 class="details-heading">Get In Touch</h2>
+            <p class="sub-text">Browse through the most frequently asked questions</p>
+            <form action="#" method="get" class="details-form">
+                <div class="input-group">
+                    <input type="text" id="name" class="details-input name" placeholder="Name">
+                    <label class="visually-hidden" for="name"></label>
+                    <input type="email" id="email" class="details-input email" placeholder="Enter your email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    <label class="visually-hidden" for="email"></label>
+                </div>
+                <input type="tel" id="phone" class="details-input phone" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <label class="visually-hidden" for="phone"></label>
+                <textarea id="message" class="details-textarea" placeholder="Messenger" rows="5" cols="50"></textarea>
+                <label class="visually-hidden" for="message"></label>
             </form>
-            <button class="details-button">SEND MESSANGER</button>
+            <button class="details-button">SEND MESSENGER</button>
         </section>
     </main>
     <footer class="page-footer">
@@ -136,9 +142,11 @@
                 </div>
                 <div class="subscribe-box">
                     <h3 class="main-content-heading">SUBSCRIBE</h3>
-                    <form class="email-bar" action="/subscribe" method="post">
-                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
-                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    <form method="get" class="email-form catalog">
+                        <input class="email-input" name="email" type="email" placeholder="Enter your email"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                        <label class="email-label" for="email"></label>
+                        <button class="email-btn" type="submit">SUBSCRIBE</button>
                     </form>
                 </div>
                 <div class="bottom-page">
