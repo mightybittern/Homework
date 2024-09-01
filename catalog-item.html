@@ -2,40 +2,41 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bakbak+One&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Catalog item</title>
+    <title>Catalog Items</title>
 </head>
 
-<body class="page-body">
+<body>
     <header class="page-header">
-        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
-            <span class="logo-text">BINABOX</span></a>
         <nav class="top-nav">
+            <a class="main-logo"><img src="Images\logo\binaboxlogo36x40.svg" alt="binabox logo" width="188" height="42"></a>
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html">HOME</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
-                <li class="nav-item"><a href="about.html">ABOUT</a>
+                <li class="nav-item"><a href="about-us.html">ABOUT</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
                 <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
                 <li class="nav-item"><a href="collection.html">COLLECTION</a>
                 </li>
                 <li class="nav-item"><a href="faqs.html">FAQS</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
                 <li class="nav-item"><a href="pages.html">PAGES</a>
+                    <button class="dropbtn" aria-label="more options"></button>
             </ul>
             <div class="nav-buttons">
-                <button class="toggle-button" onclick="toggle()">
-                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
-                </button>
-                <button type="button" class="discord-button">
-                    <img src="#" alt="discord-logo"> DISCORD
-                </button>
-                <button type="button" class="connect-button">
-                    <img src="#" alt="connect-logo"> CONNECT
-                </button>
+                <button type="button" class="toggle-button" aria-label="light switch"></button>
+                <button type="button" class="discord button">DISCORD</button>
+                <button type="button" class="connect button">CONNECT</button>
             </div>
         </nav>
     </header>
@@ -44,19 +45,18 @@
             <h1 class="main-heading">ITEM DETAIL</h1>
             <div class="breadcrumbs">
                 <nav class="breadcrumbs-nav">
-                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
-                    <a href="index.html" class="breadcrumb-link">HOME</a> &#10072;
-                    <a href="item-detail.html" class="breadcrumb-link">ITEM DETAIL</a>
+                    <a href="index.html" class="breadcrumb-link">HOME</a>
+                    <!-- Note: Add pseudo element for separator -->
+                    <a href="item-detail.html" class="breadcrumb-link"><span class="colored">ITEM DETAIL</span></a>
                 </nav>
             </div>
-            <img class="breadcrumb-image" src="#" alt="darkgrey background">
         </section>
         <section class="item-detail">
             <figure class="main-picture">
-                <img src="#" alt="skeleton">
+                <img src="images\nft\skeleton.webp" alt="skeleton" width="690" height="690">
             </figure>
             <div class="countdown">
-                <h2 class="contdown-heading">PUBLIC END IN</h2>
+                <h2 class="contdown heading">PUBLIC END IN</h2>
                 <dl class="countdown">
                     <dt class="countdown-number" id="days-number">16</dt>
                     <dd class="countdown-unit">DAYS</dd>
@@ -72,7 +72,7 @@
                 <div class="countdown-separator">:</div>
             </div>
             <div class="details-box">
-                <h2 class="details-heading">SKISIRS#4587</h2>
+                <h2 class="details heading">SKISIRS#4587</h2>
                 <p class="details-description">As the first hero of the Neoh Universe, collection has over 9,999
                     unique skins drawn from the different missions and challenges he faced throughout his life.
                 </p>
@@ -94,27 +94,21 @@
                 </dl>
             </div>
             <div class="price">
-                <p class="price-text">PRICE: 0.15 ETH</p>
+                <p class="price-text">PRICE: <span class="colored">0.15 ETH</span></p>
             </div>
             <div class="buttons">
-                <button type="button" class="buy-button">
-                    <img src="#" alt="shopping-cart-logo">BUY ON OPENSEA
-                </button>
-                <button type="button" class="join-discord">
-                    <img src="#" alt="discord-logo">JOIN DISCORD
-                </button>
-                <button type="button" class="join-twitter">
-                    <img src="#" alt="twitter-logo">JOIN TWITTER
-                </button>
+                <button type="button" class="buy cbtn">BUY ON OPENSEA</button>
+                <button type="button" class="join-discord cbtn">JOIN DISCORD</button>
+                <button type="button" class="join-twitter cbtn">JOIN TWITTER</button>
             </div>
         </section>
         <section class="collection">
-            <h2 class="visually-hidden">NFT COLLECTION</h2>
+            <h2 class="sr-only">NFT COLLECTION</h2>
             <ul class="nft-collection-list">
                 <li class="nft-card">
                     <a href="#">
                         <figure class="nft-figure">
-                            <img src="#" alt="medusa" class="nft-image">
+                            <img src="images\nft\medusa.webp" alt="medusa" class="nft-image" width="290" height="290">
                             <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
                         </figure>
                     </a>
@@ -122,7 +116,7 @@
                 <li class="nft-card">
                     <a href="#">
                         <figure class="nft-figure">
-                            <img src="#" alt="skeleton" class="nft-image">
+                            <img src="images\nft\skeleton.webp" alt="skeleton" class="nft-image" width="290" height="290">
                             <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
                         </figure>
                     </a>
@@ -130,7 +124,7 @@
                 <li class="nft-card">
                     <a href="#">
                         <figure class="nft-figure">
-                            <img src="#" alt="cat" class="nft-image">
+                            <img src="images\nft\cat.webp" alt="cat" class="nft-image" width="290" height="290">
                             <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
                         </figure>
                     </a>
@@ -138,7 +132,7 @@
                 <li class="nft-card">
                     <a href="#">
                         <figure class="nft-figure">
-                            <img src="#" alt="scissors" class="nft-image">
+                            <img src="images\nft\scissors.webp" alt="scissors" class="nft-image" width="290" height="290">
                             <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
                         </figure>
                     </a>
@@ -146,7 +140,7 @@
                 <li class="nft-card">
                     <a href="#">
                         <figure class="nft-figure">
-                            <img src="#" alt="playing-card" class="nft-image">
+                            <img src="images\nft\playing-card.webp" alt="playing-card" class="nft-image" width="290" height="290">
                             <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
                         </figure>
                     </a>
@@ -154,39 +148,37 @@
                 <li class="nft-card">
                     <a href="#">
                         <figure class="nft-figure">
-                            <img src="#" alt="monkey" class="nft-image">
+                            <img src="images\nft\monkey.webp" alt="monkey" class="nft-image" width="290" height="290">
                             <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
                         </figure>
                     </a>
                 </li>
             </ul>
+            <div class="pagination">
+                <a href="#" class="previous round" aria-label="previous"></a>
+                <a href="#" class="next round" aria-label="next"></a>
+            </div>
         </section>
     </main>
     <footer class="page-footer">
         <section class="catalog-group">
             <div class="join-our-community">
-                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
-                <p class="joc-text">
+                <h2 class="joc heading">JOIN OUR COMMUNITY</h2>
+                <p class="joc-text-diff">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
                 <div class="joc-buttons">
-                    <button type="button" class="discord-button">
-                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
-                    </button>
-                    <button type="button" class="whitelist-button">
-                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
-                    </button>
+                    <button type="button" class="joc-discord button">DISCORD</button>
+                    <button type="button" class="joc-whitelist button">WHITELIST NOW</button>
                 </div>
             </div>
             <a href="index.html" class="logo">
-                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
-                <span class="logo-text">BINABOX</span>
-            </a>
+                <img src="images\logo\binaboxlogo24z27.svg" alt="Company Logo" class="logo-img" width="176" height="42"></a>
             <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
             <div class="catalog-menu">
                 <div class="subscribe-list">
-                    <h3 class="list-heading">SUBSCRIBE</h3>
-                    <ul class="nav-list">
+                    <h3 class="list-heading fs">SUBSCRIBE</h3>
+                    <ul class="sub-nav-list">
                         <li class="nav-item">
                             <a href="#homepage">HOME</a>
                         </li>
@@ -205,8 +197,8 @@
                     </ul>
                 </div>
                 <div class="company-list">
-                    <h3 class="list-heading">COMPANY</h3>
-                    <ul class="nav-list">
+                    <h3 class="list-heading fs">COMPANY</h3>
+                    <ul class="com-nav-list">
                         <li class="nav-item">
                             <a href="#terms-conditions">Terms Conditions</a>
                         </li>
@@ -222,22 +214,24 @@
                     </ul>
                 </div>
                 <div class="subscribe-box">
-                    <h3 class="main-content-heading">SUBSCRIBE</h3>
-                    <form class="email-bar" action="/subscribe" method="post">
-                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
-                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    <h3 class="main-content-heading fs">SUBSCRIBE</h3>
+                    <form method="get" action="#" class="email-form catalog">
+                        <input class="email-input" name="email" type="email" placeholder="Enter your email"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                        <label class="email-label" for="email"></label>
+                        <button class="email-btn" type="submit">SUBSCRIBE</button>
                     </form>
                 </div>
                 <div class="bottom-page">
                     <hr>
                     <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
                     <ul class="social-links">
-                        <li><a href="#" class="social-link">Facebook</a></li>
-                        <li><a href="#" class="social-link">Twitter</a></li>
-                        <li><a href="#" class="social-link">Telegram</a></li>
-                        <li><a href="#" class="social-link">YouTube</a></li>
-                        <li><a href="#" class="social-link">TikTok</a></li>
-                        <li><a href="#" class="social-link">Discord</a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\twitter.svg" alt="twitter icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\telegram.svg" alt="telegram icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\youtube.svg" alt="youtube icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\ticktok.svg" alt="tiktok icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\discord.svg" alt="discord icon" width="20" height="20"></a></li>
                     </ul>
                 </div>
             </div>

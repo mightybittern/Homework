@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bakbak+One&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -10,32 +13,30 @@
 
 <body>
     <header class="page-header">
-        <a class="main-logo"><img src="img/logo.svg" alt="binabox-logo">
-            <span class="logo-text">BINABOX</span></a>
         <nav class="top-nav">
+            <a class="main-logo"><img src="images\logo\binaboxlogo36x40.svg" alt="binabox logo" width="188" height="42"></a>
             <ul class="nav-list">
                 <li class="nav-item"><a href="index.html">HOME</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
-                <li class="nav-item"><a href="about.html">ABOUT</a>
+                <li class="nav-item"><a href="about-us.html">ABOUT</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
                 <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
                 <li class="nav-item"><a href="collection.html">COLLECTION</a>
                 </li>
                 <li class="nav-item"><a href="faqs.html">FAQS</a>
+                    <button class="dropbtn" aria-label="more options"></button>
                 </li>
                 <li class="nav-item"><a href="pages.html">PAGES</a>
+                    <button class="dropbtn" aria-label="more options"></button>
             </ul>
             <div class="nav-buttons">
-                <button class="toggle-button" onclick="toggle()">
-                    <img id="sun-icon" src="light-mode-icon.png" alt="Toggle Light/Dark Mode">
-                </button>
-                <button type="button" class="discord-button">
-                    <img src="#" alt="discord-logo"> DISCORD
-                </button>
-                <button type="button" class="connect-button">
-                    <img src="#" alt="connect-logo"> CONNECT
-                </button>
+                <button type="button" class="toggle-button" aria-label="light switch"></button>
+                <button type="button" class="discord button">DISCORD</button>
+                <button type="button" class="connect button">CONNECT</button>
             </div>
         </nav>
     </header>
@@ -44,16 +45,15 @@
             <h1 class="main-heading">ABOUT US</h1>
             <div class="breadcrumbs">
                 <nav class="breadcrumbs-nav">
-                    <!-- I understand this separator {&#10072;} can be styled with css instead of symbol -->
-                    <a href="index.html" class="breadcrumb-link">HOME</a> &#10072;
-                    <a href="our-blog.html" class="breadcrumb-link">ABOUT US</a>
+                    <a href="index.html" class="breadcrumb-link">HOME</a>
+                    <!-- Note: Add pseudo element for separator -->
+                    <a href="our-blog.html" class="breadcrumb-link"><span class="colored">ABOUT US</span></a>
                 </nav>
             </div>
-            <img class="breadcrumb-image" src="#" alt="darkgrey background">
         </section>
         <section class="about-us-section">
-            <h2 class="section-heading">THE STORY</h2>
-            <p class="section-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            <h2 class="section heading">THE STORY</h2>
+            <p class="sub-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                 fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese
                 runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint occaecat
             </p>
@@ -65,25 +65,25 @@
             </dl>
             <ol class="about-us-list">
                 <li class="list-item">
-                    <h3 class="list-item-heading">HIGH QUALITY</h3>
+                    <h3 class="list-item sub-heading">HIGH QUALITY</h3>
                     <p class="list-item-number">01</p>
                     <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </li>
                 <li class="list-item">
-                    <h3 class="list-item-heading">BIG COLLECTION</h3>
+                    <h3 class="list-item sub-heading">BIG COLLECTION</h3>
                     <p class="list-item-number">02</p>
                     <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </li>
                 <li class="list-item">
-                    <h3 class="list-item-heading">TOP RESOURCE</h3>
+                    <h3 class="list-item sub-heading">TOP RESOURCE</h3>
                     <p class="list-item-number">03</p>
                     <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
                 </li>
                 <li class="list-item">
-                    <h3 class="list-item-heading">BIG COMMUNITY</h3>
+                    <h3 class="list-item sub-heading">BIG COMMUNITY</h3>
                     <p class="list-item-number">04</p>
                     <p class="list-item-sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     </p>
@@ -91,190 +91,177 @@
             </ol>
         </section>
         <section class="out-team">
-            <h2 class="section-heading">OUR TEAM</h2>
+            <h2 class="section heading">OUR TEAM</h2>
             <ol class="ot-members">
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Jason Smith</h3>
-                    <img src="#" class="ot-portrait" alt="Jason Smith">
+                    <img src="images\portraits\jason-smith.webp" class="ot-portrait" alt="Jason Smith" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Jason Smith</p>
+                        <h3 class="member-sub-heading">Jason Smith</h3>
                         <p class="ot-member-pos">Co - Founder</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
                 </li>
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Ralph Edwards</h3>
-                    <img src="#" class="ot-portrait" alt="Ralph Edwards">
+                    <img src="images\portraits\ralph-edwards.webp" class="ot-portrait" alt="Ralph Edwards" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Ralph Edwards</p>
+                        <h3 class="member-sub-heading">Ralph Edwards</h3>
                         <p class="ot-member-pos">Founder</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
                 </li>
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Tony Wings</h3>
-                    <img src="#" class="ot-portrait" alt="Tony Wings">
+                    <img src="images\portraits\tony-wings.webp" class="ot-portrait" alt="Tony Wings" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Tony Wings</p>
+                        <h3 class="member-sub-heading">Tony Wings</h3>
                         <p class="ot-member-pos">Web Designer</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
                 </li>
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Edward Howard</h3>
-                    <img src="#" class="ot-portrait" alt="Edward Howard">
+                    <img src="images\portraits\edward-howard.webp" class="ot-portrait" alt="Edward Howard" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Edward Howard</p>
+                        <h3 class="member-sub-heading">Edward Howard</h3>
                         <p class="ot-member-pos">Project Manager</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
                 </li>
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Jenny Wilson</h3>
-                    <img src="#" class="ot-portrait" alt="Jenny Wilson">
+                    <img src="images\portraits\jenny-wilson.webp" class="ot-portrait" alt="Jenny Wilson" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Jenny Wilson</p>
+                        <h3 class="member-sub-heading">Jenny Wilson</h3>
                         <p class="ot-member-pos">Artist</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
-                </li>
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Robert Fox</h3>
-                    <img src="#" class="ot-portrait" alt="Robert Fox">
+                    <img src="images\portraits\robert-fox.webp" class="ot-portrait" alt="Robert Fox" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Robert Fox</p>
+                        <h3 class="member-sub-heading">Robert Fox</h3>
                         <p class="ot-member-pos">UI/UX Designer</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
                 </li>
                 <li class="ot-member">
-                    <h3 class="tony-wings-heading">Devon Lane</h3>
-                    <img src="#" class="ot-portrait" alt="Devon Lane">
+                    <img src="images\portraits\devon-lane.webp" class="ot-portrait" alt="Devon Lane" width="120" height="120">
                     <div class="name-pos">
-                        <p class="ot-member-name">Devon Lane</p>
+                        <h3 class="member-sub-heading">Devon Lane</h3>
                         <p class="ot-member-pos">UX Architect</p>
                     </div>
                     <div class="ot-links">
-                        <a href="#" class="ot-linkedin">LinkedIn</a>
-                        <a href="#" class="ot-facebook">Facebook</a>
-                        <a href="#" class="ot-instagram">Instagram</a>
-                        <a href="#" class="ot-telegram">Telegram</a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\linkedin.svg" alt="linkedin icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\instagram.svg" alt="instagram icon" width="20" height="20"></a>
+                        <a href="#" target="_blank" class="ot-social"><img src="images\icons\telegram-small.svg" alt="telegram icon" width="20" height="20"></a>
                     </div>
                 </li>
             </ol>
         </section>
         <section class="partners">
-            <h2 class="partners-heading">BINABOX PARTNERS</h2>
+            <h2 class="partners heading"><span class="colored">BINABOX</span> PARTNERS</h2>
             <div class="partner-logo">
-                <img src="#" alt="near">
+                <img src="images\partners\near.svg" alt="near" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="binance chain">
+                <img src="images\partners\binance-coin.svg" alt="binance chain" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="coinbase wallet">
+                <img src="images\partners\coinbase-wallet.svg" alt="coinbase wallet" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="zerion">
+                <img src="images\partners\zerion.svg" alt="zerion" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="zapper">
+                <img src="images\partners\zapper.svg" alt="zapper" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="instaApp">
+                <img src="images\partners\instaapp.svg" alt="instaApp" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="atoken">
+                <img src="images\partners\atoken.svg" alt="atoken" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="trust wallet">
+                <img src="images\partners\trust-wallet.svg" alt="trust wallet" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="giving block">
+                <img src="images\partners\giving-block.svg" alt="giving block" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="venly">
-            </div>
-            <div class="partner-logo"><img src="#" alt="pillar">
+                <img src="images\partners\venly.svg" alt="venly" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="dappRadar">
+                <img src="images\partners\pillar.svg" alt="pillar" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="synthetix">
+                <img src="images\partners\dappradar.svg" alt="dappRadar" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="unstoppable">
+                <img src="images\partners\synthetix.svg" alt="synthetix" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="live coin watch">
+                <img src="images\partners\unstoppable.svg" alt="unstoppable" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="bitpay">
+                <img src="images\partners\live-coin-watch.svg" alt="live coin watch" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="unstoppable domains">
+                <img src="images\partners\bitpay.svg" alt="bitpay" width="162" height="60">
             </div>
             <div class="partner-logo">
-                <img src="#" alt="huobi_wallet">
+                <img src="images\partners\unstoppable-domains.svg" alt="unstoppable domains" width="162" height="60">
+            </div>
+            <div class="partner-logo">
+                <img src="images\partners\huobi-wallet.svg" alt="huobi_wallet" width="162" height="60">
             </div>
         </section>
     </main>
     <footer class="page-footer">
         <section class="catalog-group">
             <div class="join-our-community">
-                <h2 class="joc-heading">JOIN OUR COMMUNITY</h2>
+                <h2 class="joc heading">JOIN OUR COMMUNITY</h2>
                 <p class="joc-text">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 </p>
                 <div class="joc-buttons">
-                    <button type="button" class="discord-button">
-                        <img src="path/to/discord-logo.png" alt="discord-logo"> DISCORD
-                    </button>
-                    <button type="button" class="whitelist-button">
-                        <img src="path/to/whitelist-logo.png" alt="whitelist-logo"> WHITELIST NOW
-                    </button>
+                    <button type="button" class="joc-discord button">DISCORD</button>
+                    <button type="button" class="joc-whitelist button">WHITELIST NOW</button>
                 </div>
             </div>
             <a href="index.html" class="logo">
-                <img src="img/logo.svg" alt="Company Logo" class="logo-img">
-                <span class="logo-text">BINABOX</span>
-            </a>
+                <img src="images\logo\binaboxlogo24z27.svg" alt="Company Logo" class="logo-img" width="176" height="42"></a>
             <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
             <div class="catalog-menu">
                 <div class="subscribe-list">
-                    <h3 class="list-heading">SUBSCRIBE</h3>
-                    <ul class="nav-list">
+                    <h3 class="list-heading fs">SUBSCRIBE</h3>
+                    <ul class="sub-nav-list">
                         <li class="nav-item">
                             <a href="#homepage">HOME</a>
                         </li>
@@ -293,8 +280,8 @@
                     </ul>
                 </div>
                 <div class="company-list">
-                    <h3 class="list-heading">COMPANY</h3>
-                    <ul class="nav-list">
+                    <h3 class="list-heading fs">COMPANY</h3>
+                    <ul class="com-nav-list">
                         <li class="nav-item">
                             <a href="#terms-conditions">Terms Conditions</a>
                         </li>
@@ -310,22 +297,24 @@
                     </ul>
                 </div>
                 <div class="subscribe-box">
-                    <h3 class="main-content-heading">SUBSCRIBE</h3>
-                    <form class="email-bar" action="/subscribe" method="post">
-                        <input class="search-window" type="email" name="email" placeholder="Enter your email">
-                        <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                    <h3 class="main-content-heading fs">SUBSCRIBE</h3>
+                    <form method="get" action="#" class="email-form catalog">
+                        <input class="email-input" name="email" type="email" placeholder="Enter your email"
+                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                        <label class="email-label" for="email"></label>
+                        <button class="email-btn" type="submit">SUBSCRIBE</button>
                     </form>
-                </div>
+                </div> 
                 <div class="bottom-page">
                     <hr>
                     <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
                     <ul class="social-links">
-                        <li><a href="#" class="social-link">Facebook</a></li>
-                        <li><a href="#" class="social-link">Twitter</a></li>
-                        <li><a href="#" class="social-link">Telegram</a></li>
-                        <li><a href="#" class="social-link">YouTube</a></li>
-                        <li><a href="#" class="social-link">TikTok</a></li>
-                        <li><a href="#" class="social-link">Discord</a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\twitter.svg" alt="twitter icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\facebook.svg" alt="facebook icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\telegram.svg" alt="telegram icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\youtube.svg" alt="youtube icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\ticktok.svg" alt="tiktok icon" width="20" height="20"></a></li>
+                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\discord.svg" alt="discord icon" width="20" height="20"></a></li>
                     </ul>
                 </div>
             </div>
