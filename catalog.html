@@ -4,7 +4,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bakbak+One&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&family=Bakbak+One&family=Orbitron&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
@@ -12,35 +14,62 @@
 </head>
 
 <body>
+    <div class="container"></div>
     <header class="page-header">
-        <nav class="top-nav">
+        <nav class="top-nav container">
             <a class="main-logo"><img src="images\logo\binaboxlogo36x40.svg" alt="binabox logo" width="188"
                     height="42"></a>
-                    <ul class="nav-list">
-                        <li class="nav-item"><a href="index.html">HOME</a>
-                            <button class="dropbtn" aria-label="more options"></button>
-                        </li>
-                        <li class="nav-item"><a href="about-us.html">ABOUT</a>
-                            <button class="dropbtn" aria-label="more options"></button>
-                        </li>
-                        <li class="nav-item"><a href="roadmap.html">ROADMAP</a>
-                            <button class="dropbtn" aria-label="more options"></button>
-                        </li>
-                        <li class="nav-item"><a href="collection.html">COLLECTION</a>
-                        </li>
-                        <li class="nav-item"><a href="faqs.html">FAQS</a>
-                            <button class="dropbtn" aria-label="more options"></button>
-                        </li>
-                        <li class="nav-item"><a href="pages.html">PAGES</a>
-                            <button class="dropbtn" aria-label="more options"></button>
-                    </ul>
+            <ul class="nav-list">
+                <li class="nav-item top"><a class="trans" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item top"><a class="trans" href="about-us.html">ABOUT</a>
+                </li>
+                <li class="nav-item top"><a class="trans" href="roadmap.html">ROADMAP</a>
+                </li>
+                <li class="nav-item top"><a class="trans" href="collection.html">COLLECTION</a>
+                </li>
+                <li class="nav-item top"><a class="trans" href="faqs.html">FAQS</a>
+                </li>
+                <li class="nav-item top"><a class="trans" href="pages.html">PAGES</a>
+            </ul>
             <div class="nav-buttons">
-                <button type="button" class="toggle-button" aria-label="light switch"></button>
+                <button type="button" class="toggle-button" aria-label="light switch">
+                    <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.3495 5.62573C10.0884 5.6255 8.85553 5.99925 7.80681 6.69973C6.7581 7.40021 5.94066 8.39594 5.45788 9.56101C4.9751 10.7261 4.84865 12.0082 5.09454 13.2451C5.34042 14.482 5.94759 15.6183 6.83926 16.5101C7.73093 17.402 8.86705 18.0094 10.1039 18.2555C11.3408 18.5016 12.6229 18.3754 13.7881 17.8929C14.9532 17.4103 15.9492 16.5931 16.6498 15.5445C17.3505 14.496 17.7245 13.2632 17.7245 12.002C17.7228 10.3117 17.0506 8.69105 15.8555 7.49568C14.6604 6.30031 13.0399 5.62782 11.3495 5.62573Z"
+                            fill="#21E786" />
+                        <path
+                            d="M21.4848 10.877H19.986C19.6876 10.877 19.4014 10.9955 19.1904 11.2065C18.9794 11.4175 18.8608 11.7037 18.8608 12.0021C18.8608 12.3006 18.9794 12.5868 19.1904 12.7978C19.4014 13.0088 19.6876 13.1273 19.986 13.1273H21.4848C21.7832 13.1273 22.0694 13.0088 22.2804 12.7978C22.4914 12.5868 22.61 12.3006 22.61 12.0021C22.61 11.7037 22.4914 11.4175 22.2804 11.2065C22.0694 10.9955 21.7832 10.877 21.4848 10.877Z"
+                            fill="#21E786" />
+                        <path
+                            d="M11.3495 19.4998C11.0513 19.5002 10.7655 19.6189 10.5547 19.8299C10.3439 20.0408 10.2254 20.3267 10.2251 20.6249V22.1251C10.2251 22.4233 10.3436 22.7093 10.5544 22.9202C10.7653 23.131 11.0513 23.2495 11.3495 23.2495C11.6477 23.2495 11.9336 23.131 12.1445 22.9202C12.3554 22.7093 12.4738 22.4233 12.4738 22.1251V20.6249C12.4736 20.3267 12.3551 20.0408 12.1443 19.8299C11.9336 19.6189 11.6477 19.5002 11.3495 19.4998Z"
+                            fill="#21E786" />
+                        <path
+                            d="M3.85657 12.0021C3.85631 11.7039 3.73778 11.418 3.52699 11.2071C3.31619 10.9961 3.03033 10.8774 2.73212 10.877H1.23359C0.935168 10.877 0.648972 10.9955 0.437958 11.2065C0.226945 11.4175 0.108398 11.7037 0.108398 12.0021C0.108398 12.3006 0.226945 12.5868 0.437958 12.7978C0.648972 13.0088 0.935168 13.1273 1.23359 13.1273H2.73212C3.03033 13.1269 3.31619 13.0082 3.52699 12.7972C3.73779 12.5863 3.85631 12.3003 3.85657 12.0021Z"
+                            fill="#21E786" />
+                        <path
+                            d="M11.3499 4.50045C11.6481 4.5 11.9339 4.38129 12.1447 4.17036C12.3555 3.95942 12.474 3.67349 12.4743 3.37528V1.87509C12.4743 1.57689 12.3558 1.29091 12.145 1.08005C11.9341 0.869191 11.6481 0.750732 11.3499 0.750732C11.0517 0.750732 10.7658 0.869191 10.5549 1.08005C10.344 1.29091 10.2256 1.57689 10.2256 1.87509V3.37528C10.2258 3.67347 10.3443 3.9594 10.5551 4.17034C10.7658 4.38128 11.0517 4.5 11.3499 4.50045Z"
+                            fill="#21E786" />
+                        <path
+                            d="M18.2447 6.69707L19.3055 5.6363C19.4102 5.53197 19.4934 5.408 19.5501 5.2715C19.6069 5.135 19.6362 4.98864 19.6364 4.8408C19.6365 4.69296 19.6075 4.54655 19.551 4.40993C19.4945 4.27332 19.4116 4.14919 19.3071 4.04465C19.2025 3.94011 19.0784 3.85722 18.9418 3.80071C18.8052 3.7442 18.6587 3.71519 18.5109 3.71533C18.3631 3.71548 18.2167 3.74478 18.0802 3.80155C17.9437 3.85833 17.8197 3.94147 17.7154 4.04621L16.6546 5.10701C16.5499 5.21134 16.4667 5.33531 16.41 5.47181C16.3532 5.60831 16.3239 5.75467 16.3237 5.90251C16.3236 6.05035 16.3526 6.19677 16.4091 6.33338C16.4656 6.46999 16.5485 6.59412 16.6531 6.69865C16.7576 6.80319 16.8817 6.88609 17.0183 6.94259C17.1549 6.9991 17.3014 7.02811 17.4492 7.02797C17.597 7.02782 17.7434 6.99852 17.8799 6.94174C18.0164 6.88496 18.1404 6.80182 18.2447 6.69707Z"
+                            fill="#21E786" />
+                        <path
+                            d="M18.2445 17.3073C18.1402 17.2026 18.0162 17.1195 17.8797 17.0627C17.7432 17.006 17.5969 16.9767 17.4491 16.9766C17.3013 16.9764 17.1549 17.0055 17.0183 17.062C16.8817 17.1185 16.7576 17.2014 16.653 17.3059C16.5485 17.4104 16.4656 17.5345 16.4091 17.6711C16.3526 17.8077 16.3236 17.9541 16.3237 18.1019C16.3239 18.2497 16.3531 18.3961 16.4099 18.5326C16.4666 18.6691 16.5497 18.793 16.6544 18.8974L17.7152 19.9581C17.8196 20.0628 17.9435 20.146 18.08 20.2027C18.2165 20.2594 18.3629 20.2887 18.5107 20.2889C18.6585 20.289 18.8049 20.26 18.9415 20.2035C19.0781 20.1469 19.2022 20.0641 19.3067 19.9595C19.4112 19.855 19.4941 19.7309 19.5506 19.5943C19.6071 19.4577 19.6362 19.3113 19.636 19.1635C19.6359 19.0157 19.6066 18.8693 19.5499 18.7329C19.4931 18.5964 19.41 18.4724 19.3053 18.3681L18.2445 17.3073Z"
+                            fill="#21E786" />
+                        <path
+                            d="M4.45432 17.307L3.39354 18.3678C3.28876 18.4722 3.20559 18.5961 3.14879 18.7326C3.09198 18.8691 3.06266 19.0155 3.0625 19.1634C3.06234 19.3112 3.09134 19.4577 3.14785 19.5943C3.20436 19.7309 3.28726 19.8551 3.39181 19.9596C3.49636 20.0642 3.62051 20.1471 3.75714 20.2036C3.89377 20.2601 4.04021 20.2891 4.18807 20.2889C4.33592 20.2888 4.48229 20.2595 4.6188 20.2026C4.75531 20.1458 4.87928 20.0627 4.9836 19.9579L6.0444 18.8971C6.14911 18.7928 6.23221 18.6688 6.28896 18.5323C6.34571 18.3958 6.37499 18.2495 6.37512 18.1017C6.37525 17.9538 6.34623 17.8075 6.28972 17.6709C6.23321 17.5343 6.15032 17.4102 6.0458 17.3056C5.94127 17.2011 5.81716 17.1182 5.68057 17.0617C5.54398 17.0052 5.39759 16.9762 5.24977 16.9763C5.10195 16.9764 4.95561 17.0057 4.81911 17.0625C4.68262 17.1192 4.55866 17.2023 4.45432 17.307Z"
+                            fill="#21E786" />
+                        <path
+                            d="M4.45435 6.69703C4.55872 6.80158 4.68268 6.88454 4.81913 6.94116C4.95558 6.99778 5.10185 7.02696 5.24959 7.02702C5.39732 7.02708 5.54362 6.99803 5.68012 6.94152C5.81662 6.88502 5.94064 6.80216 6.04511 6.6977C6.14957 6.59324 6.23242 6.46921 6.28893 6.33271C6.34544 6.19621 6.37449 6.04991 6.37442 5.90218C6.37436 5.75444 6.34519 5.60817 6.28856 5.47172C6.23194 5.33527 6.14898 5.21131 6.04443 5.10694L4.98363 4.04614C4.87933 3.94125 4.75536 3.85798 4.61882 3.80109C4.48228 3.7442 4.33586 3.71481 4.18794 3.7146C4.04002 3.71439 3.89352 3.74338 3.75682 3.79989C3.62012 3.8564 3.49592 3.93933 3.39133 4.04392C3.28673 4.14852 3.20381 4.27272 3.1473 4.40942C3.09079 4.54611 3.06181 4.69262 3.06201 4.84054C3.06222 4.98845 3.09161 5.13488 3.1485 5.27142C3.2054 5.40795 3.28867 5.53193 3.39356 5.63623L4.45435 6.69703Z"
+                            fill="#21E786" />
+                    </svg>
+                </button>
                 <button type="button" class="discord button">DISCORD</button>
                 <button type="button" class="connect bina-green button">CONNECT</button>
             </div>
         </nav>
     </header>
+    </div>
     <main class="catalog-main">
         <section class="breadcrumbs-container">
             <h1 class="main-heading">EXPLORE COLLECTIONS</h1>
@@ -52,7 +81,7 @@
                 </nav>
             </div>
         </section>
-        <section class="catalog-content">
+        <section class="catalog-content container">
             <div class="group-heading">
                 <h2 class="main-content heading">All Items</h2>
                 <form class="search-bar" method="get" action="#">
@@ -89,15 +118,18 @@
                             </g>
                         </svg>
                     </button>
-                </form> 
+                </form>
             </div>
             <div class="filter-bar">
                 <ul class="filter-list-selected">
-                    <li class="filter-item-selected">King<button class="filter-item-remove" aria-label="remove filter"></button>
+                    <li class="filter-item-selected">King<button class="filter-item-remove"
+                            aria-label="remove filter"></button>
                     </li>
-                    <li class="filter-item-selected">Mix<button class="filter-item-remove" aria-label="remove filter"></button>
+                    <li class="filter-item-selected">Mix<button class="filter-item-remove"
+                            aria-label="remove filter"></button>
                     </li>
-                    <li class="filter-item-selected">Skacura<button class="filter-item-remove" aria-label="remove filter"></button>
+                    <li class="filter-item-selected">Skacura<button class="filter-item-remove"
+                            aria-label="remove filter"></button>
                     </li>
                 </ul>
                 <button class="filter-clear-all"><span class="colored">Clear All</span></button>
@@ -113,24 +145,22 @@
                                 <label for="combatant">Combatant</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="clothing"
-                                    value="ninja" id="ninja" />
+                                <input class="item-checkbox" type="checkbox" name="clothing" value="ninja" id="ninja" />
                                 <label for="ninja">Ninja</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="clothing"
-                                    value="king" id="king" checked />
+                                <input class="item-checkbox" type="checkbox" name="clothing" value="king" id="king"
+                                    checked />
                                 <label for="king">King</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="clothing"
-                                    value="queen" id="queen" />
+                                <input class="item-checkbox" type="checkbox" name="clothing" value="queen" id="queen" />
                                 <label for="queen">Queen</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="clothing"
-                                    value="robot" id="-robot" />
+                                <input class="item-checkbox" type="checkbox" name="clothing" value="robot"
+                                    id="-robot" />
                                 <label for="robot">Robot</label>
                             </li>
                         </ul>
@@ -140,37 +170,31 @@
                         <summary class="filter-title">EYES</summary>
                         <ul class="filter-list">
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="eyes"
-                                    value="yellow" id="yellow" />
+                                <input class="item-checkbox" type="checkbox" name="eyes" value="yellow" id="yellow" />
                                 <label for="yellow">Yellow</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="eyes"
-                                    value="green" id="green" />
+                                <input class="item-checkbox" type="checkbox" name="eyes" value="green" id="green" />
                                 <label for="green">Green</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" checked type="checkbox" name="eyes"
-                                    value="mix" id="mix" />
+                                <input class="item-checkbox" checked type="checkbox" name="eyes" value="mix" id="mix" />
                                 <label for="mix">Mix</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="eyes"
-                                    value="orange" id="orange" />
+                                <input class="item-checkbox" type="checkbox" name="eyes" value="orange" id="orange" />
                                 <label for="orange">Orange</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="eyes" value="glow"
-                                    id="glow" />
+                                <input class="item-checkbox" type="checkbox" name="eyes" value="glow" id="glow" />
                                 <label for="glow">Glow </label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="eyes" value="blue"
-                                    id="blue" />
+                                <input class="item-checkbox" type="checkbox" name="eyes" value="blue" id="blue" />
                                 <label for="blue">Blue</label>
                             </li>
                         </ul>
@@ -180,31 +204,26 @@
                         <summary class="filter-title">FACE</summary>
                         <ul class="filter-list">
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="face"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="face" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="face"
-                                    value="item" id="item" />
-                                <label for="item">Item</label>
-                            </li>
-
-                            <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="face"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="face" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="face"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="face" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="face"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="face" value="item" id="item" />
+                                <label for="item">Item</label>
+                            </li>
+
+                            <li class="filter-item">
+                                <input class="item-checkbox" type="checkbox" name="face" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
                         </ul>
@@ -214,31 +233,26 @@
                         <summary class="filter-title">SKIN</summary>
                         <ul class="filter-list">
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="skin"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="skin" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="skin"
-                                    value="item" id="item" />
-                                <label for="item">Item</label>
-                            </li>
-
-                            <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="skin"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="skin" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="skin"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="skin" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="skin"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="skin" value="item" id="item" />
+                                <label for="item">Item</label>
+                            </li>
+
+                            <li class="filter-item">
+                                <input class="item-checkbox" type="checkbox" name="skin" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
                         </ul>
@@ -248,31 +262,26 @@
                         <summary class="filter-title">BACKGROUND</summary>
                         <ul class="filter-list">
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="background"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="background" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="background"
-                                    value="item" id="item" />
-                                <label for="item">Item</label>
-                            </li>
-
-                            <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="background"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="background" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="background"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="background" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="background"
-                                    value="item" id="item" />
+                                <input class="item-checkbox" type="checkbox" name="background" value="item" id="item" />
+                                <label for="item">Item</label>
+                            </li>
+
+                            <li class="filter-item">
+                                <input class="item-checkbox" type="checkbox" name="background" value="item" id="item" />
                                 <label for="item">Item</label>
                             </li>
                         </ul>
@@ -282,41 +291,38 @@
                         <summary class="filter-title">SPECIAL</summary>
                         <ul class="filter-list">
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="special"
-                                    value="cat" id="cat" />
+                                <input class="item-checkbox" type="checkbox" name="special" value="cat" id="cat" />
                                 <label for="cat">Cat</label>
                             </li>
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="special"
-                                    value="sakura" id="sakura" />
+                                <input class="item-checkbox" type="checkbox" name="special" value="sakura"
+                                    id="sakura" />
                                 <label for="sakura">Sakura</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="special"
-                                    value="snake" id="snake" checked />
+                                <input class="item-checkbox" type="checkbox" name="special" value="snake" id="snake"
+                                    checked />
                                 <label for="snake">Snake</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="special"
-                                    value="earth" id="earth" />
+                                <input class="item-checkbox" type="checkbox" name="special" value="earth" id="earth" />
                                 <label for="earth">Earth</label>
                             </li>
 
                             <li class="filter-item">
-                                <input class="item-checkbox" type="checkbox" name="special"
-                                    value="water" id="water" />
+                                <input class="item-checkbox" type="checkbox" name="special" value="water" id="water" />
                                 <label for="water">Water</label>
                             </li>
                         </ul>
                     </details>
                 </form>
-                </aside>
+            </aside>
             <div class="catalog-items">
                 <ul class="catalog-list">
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\duck.webp" alt="duck" class="nft-image" width="290" height="290">
                                 <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
@@ -324,7 +330,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\glass-frame.webp" alt="glass-frame" class="nft-image" width="290"
                                     height="290">
@@ -333,7 +339,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\cat.webp" alt="cat" class="nft-image" width="290" height="290">
                                 <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
@@ -341,7 +347,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\t-rex.webp" alt="t-rex" class="nft-image" width="290" height="290">
                                 <figcaption class="nft-image-caption">SKISIRS#2</figcaption>
@@ -349,7 +355,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\playing-card.webp" alt="playing-card" class="nft-image" width="290"
                                     height="290">
@@ -358,7 +364,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\skeleton.webp" alt="skeleton" class="nft-image" width="290"
                                     height="290">
@@ -367,7 +373,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\monkey.webp" alt="monkey" class="nft-image" width="290"
                                     height="290">
@@ -376,7 +382,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\scissors.webp" alt="scissors" class="nft-image" width="290"
                                     height="290">
@@ -385,7 +391,7 @@
                         </a>
                     </li>
                     <li class="nft-card">
-                        <a href="#">
+                        <a class="nft-link" href="#">
                             <figure class="nft-figure">
                                 <img src="images\nft\medusa.webp" alt="medusa" class="nft-image" width="290"
                                     height="290">
@@ -395,11 +401,11 @@
                     </li>
                 </ul>
             </div>
-        </>
+            </>
     </main>
     <footer class="page-footer">
         <section class="catalog-group">
-            <div class="join-our-community">
+            <div class="join-our-community container">
                 <h2 class="joc heading">JOIN OUR COMMUNITY</h2>
                 <p class="joc-text-diff">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -409,75 +415,75 @@
                     <button type="button" class="bina-green button">WHITELIST NOW</button>
                 </div>
             </div>
-            <a href="index.html" class="logo">
-                <img src="images\logo\binaboxlogo24z27.svg" alt="Company Logo" class="logo-img" width="176"
-                    height="42"></a>
-            <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
-            <div class="catalog-menu">
-                <div class="subscribe-list">
-                    <h3 class="list-heading fs">SUBSCRIBE</h3>
-                    <ul class="sub-nav-list">
-                        <li class="nav-item">
-                            <a href="#homepage">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about-us">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#roadmap">Roadmap</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#our-team">Our Team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#faqs">FAQs</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="company-list">
-                    <h3 class="list-heading fs">COMPANY</h3>
-                    <ul class="com-nav-list">
-                        <li class="nav-item">
-                            <a href="#terms-conditions">Terms Conditions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#privacy-policy">Privacy Policy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#whitepaper">Whitepaper</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#help-center">Help Center</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="subscribe-box">
-                    <h3 class="main-content-heading fs">SUBSCRIBE</h3>
-                    <form method="get" action="#" class="email-form catalog">
-                        <input class="email-input" name="email" type="email" placeholder="Enter your email"
-                            pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-                        <label class="email-label" for="email"></label>
-                        <button class="bina-green button" type="submit">SUBSCRIBE</button>
-                    </form>
-                </div>
-                <div class="bottom-page">
-                    <hr>
-                    <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
-                    <ul class="social-links">
-                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\twitter.svg"
-                                    alt="twitter icon" width="20" height="20"></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\facebook.svg"
-                                    alt="facebook icon" width="20" height="20"></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\telegram.svg"
-                                    alt="telegram icon" width="20" height="20"></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\youtube.svg"
-                                    alt="youtube icon" width="20" height="20"></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\ticktok.svg"
-                                    alt="tiktok icon" width="20" height="20"></a></li>
-                        <li><a href="#" target="_blank" class="social-link"><img src="images\icons\discord.svg"
-                                    alt="discord icon" width="20" height="20"></a></li>
-                    </ul>
-                </div>
+            <div class="footer-logo">
+                <a href="index.html" class="logo">
+                    <img src="images\logo\binaboxlogo24z27.svg" alt="Company Logo" class="logo-img" width="176"
+                        height="42"></a>
+                <p class="page-footer-text">We are the best way to check the rarity of NFT collection.</p>
+            </div>
+            <div class="subscribe-list">
+                <h3 class="list-heading fs">SUBSCRIBE</h3>
+                <ul class="sub-nav-list">
+                    <li class="nav-item">
+                        <a href="#homepage">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#our-team">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#faqs">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="company-list">
+                <h3 class="list-heading fs">COMPANY</h3>
+                <ul class="com-nav-list">
+                    <li class="nav-item">
+                        <a href="#terms-conditions">Terms Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#privacy-policy">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#whitepaper">Whitepaper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#help-center">Help Center</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="subscribe-box">
+                <h3 class="main-content-heading fs">SUBSCRIBE</h3>
+                <form method="get" action="#" class="email-form catalog">
+                    <input class="email-input" name="email" type="email" placeholder="Enter your email"
+                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    <label class="email-label" for="email"></label>
+                    <button class="bina-green button" type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+            <div class="bottom-page">
+                <p class="copyright-text">BINABOX 2022 - All rights reserved</p>
+                <ul class="social-links">
+                    <li><a href="#" target="_blank" class="social-link fi"><img src="images\icons\twitter.svg"
+                                alt="twitter icon" width="20" height="20"></a></li>
+                    <li><a href="#" target="_blank" class="social-link fi"><img src="images\icons\facebook.svg"
+                                alt="facebook icon" width="20" height="20"></a></li>
+                    <li><a href="#" target="_blank" class="social-link fi"><img src="images\icons\telegram.svg"
+                                alt="telegram icon" width="20" height="20"></a></li>
+                    <li><a href="#" target="_blank" class="social-link fi"><img src="images\icons\youtube.svg"
+                                alt="youtube icon" width="20" height="20"></a></li>
+                    <li><a href="#" target="_blank" class="social-link fi"><img src="images\icons\ticktok.svg"
+                                alt="tiktok icon" width="20" height="20"></a></li>
+                    <li><a href="#" target="_blank" class="social-link fi"><img src="images\icons\discord.svg"
+                                alt="discord icon" width="20" height="20"></a></li>
+                </ul>
+            </div>
             </div>
         </section>
     </footer>
